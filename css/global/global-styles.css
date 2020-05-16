@@ -1,0 +1,776 @@
+/*!LAST UPDATED: May 14, 2020*/
+/*!==== INDEX ====
+    GENERAL PROPERTIES (Updated: april 20, 2020)
+    1. TEXT STYLES (Updated: May 10, 2020)
+    2. COLORS (Updated: May 4, 2020)
+    3. BUTTONS (Updated: May 8, 2020)
+    4. ANIMATIONS (Updated: april 29, 2020)
+    5. EXTRAS (Updated: May 13, 2020)
+    MEDIA QUERIES (Updated: april 20, 2020)
+
+==== INDEX ====*/
+
+/*GENERAL PROPERTIES*/
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
+}
+
+.inner-paddings1 {
+  padding: 50px 30px;
+}
+
+/*GENERAL PROPERTIES*/
+
+/*!==== 1. TEXT STYLES ====*/
+:root {
+  font-size: 16px;
+  /*LINE HEIGHTS*/
+  --lhp1: 1.45; /*Default line-height, used for small paragraphs*/
+  --lht: 1.05; /*Used in titles*/
+  --lhlp1: 1.6; /*used for long paragraphs*/
+  /*LINE HEIGHTS*/
+
+  /*TEXT WIDTHS*/
+  --tw1: 55%; /*Used for Section Paragraphs*/
+  --twh1: 80%; /*Used for H1s*/
+  --twh2: 70%; /*Used for H2s*/
+  /*TEXT WIDTHS*/
+
+  /*TEXT-MARGINS*/
+  --tmh2: 0.5rem 0; /*Mainly used for H2s */
+  --tmh3: 0.2rem 0; /*Mainly used for H2s */
+  --tmp1: 0.25rem 0; /*Mainly used for P1s */
+  --tm2: 4% 0; /*Used for Containers :) */
+  --tm3: 2% 0; /**/
+  --tm4: 4% auto; /**/
+  /*TEXT-MARGINS*/
+}
+
+/* FEATURED TITLE */
+.featured-title{
+  font-family: "Poppins", arial, sans-serif;
+  font-size: 3.815rem;
+  font-weight: bold;
+  text-align: center;
+  letter-spacing: -0.02em;
+  line-height: var(--lht);
+  margin: var(--tmh2);
+  color: var(--black-normal);
+}
+
+/* FEATURED SUBTITLE (PENDING)*/
+.featured-sub{
+  font-family: "Poppins", arial, sans-serif;
+  font-size: 1.2rem;
+  font-weight: normal;
+  text-align: center;
+  letter-spacing: -0.02em;
+  line-height: var(--lht);
+  margin: var(--tmh2);
+  color: var(--black-normal);
+}
+
+/* H2s */
+.h2s {
+  font-family: "Poppins", arial, sans-serif;
+  font-size: 3.052rem;
+  font-weight: bold;
+  text-align: center;
+  letter-spacing: -0.02em;
+  line-height: var(--lht);
+  color: var(--black-normal);
+  margin: var(--tmh2);
+}
+
+/* H3s */
+.h3s {
+  font-family: "Poppins", arial, sans-serif;
+  font-size: 1.563rem;
+  line-height: var(--lht);
+  letter-spacing: -0.02em;
+  font-weight: bold;
+  text-align: center;
+  color: var(--black-normal);
+  margin: var(--tmh3);
+}
+
+/*p1s*/
+.p1s,.lp1s {
+  font-family: "Open Sans", arial, sans-serif;
+  font-size: 1.1rem;
+  line-height: var(--lhp1);
+  font-weight: normal;
+  text-align: center;
+  color: var(--black-normal);
+  margin: var(--tmp1);
+}
+
+/*Lp1s (Long p1s)*/
+.lp1s {
+  line-height: var(--lhlp1);
+}
+
+/*P2s (PENDING)*/
+.p2s {
+  font-family: "Open Sans", arial, sans-serif;
+  font-size: 0.8rem;
+  line-height: var(--lhp1);
+  font-weight: normal;
+  text-align: center;
+  color: var(--black-normal);
+  margin: var(--tmh2);
+}
+/*NOTES*/
+.note1{
+  font-family: "Open Sans", arial, sans-serif;
+  font-size: 0.8rem;
+  line-height: var(--lhp1);
+  font-weight: bold;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 0.15rem;
+  color: var(--black-normal);
+  margin: var(--tmp1);
+  user-select: none;
+}
+
+.note-lt{
+  font-family: "Open Sans", arial, sans-serif;
+  font-size: 0.65rem;
+  line-height: var(--lhp1);
+  font-weight: bold;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: line-through;
+  letter-spacing: 0.15rem;
+  color: var(--black-normal);
+  margin: var(--tmp1);
+  opacity:0.6;
+  user-select: none;
+}
+
+.note-container{
+  width: 80%;
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: flex-start;
+  margin: 2rem 0 0.5rem 0;
+}
+/*NOTES*/
+/*EXTRAS*/
+.bold{
+  font-weight: bold;
+}
+
+.ital{
+  font-style: italic;
+}/*italics*/
+
+.underline{
+  text-decoration: underline;
+}/*underline*/
+
+.link{
+  font-weight: bold;
+  text-decoration: underline;
+  transition: all 100ms ease-in-out;
+}
+
+.link:hover{
+  color: var(--color1-normal);
+}
+
+.link:focus{
+  color: var(--color2-normal);
+}
+/*EXTRAS*/
+
+/*FA ICONS*/
+/* USAGE:
+  add any of the classes to an <i> from FA.
+
+  DEFAULTS:
+  .i-li: <i class="fas fa-chevron-circle-right i-li"></i>
+  .i-ok: <i class="fas fa-check-circle i-ok"></i>
+  .i-warn: <i class="fas fa-exclamation-triangle i-warn"></i>
+  .i-attn: <i class="fas fa-exclamation-circle i-attn"></i>
+
+  CURRENT PROJECT:
+  price tag: <i class="fas fa-dollar-sign i-ok"></i>
+  Offer tag: <i class="fas fa-offer i-warn"></i>
+  calendar day: <i class="fas fa-calendar-day i-warn"></i>
+  star: <i class="fas fa-star i-c1"></i>
+  clock:<i class="fas fa-clock i-c1"></i>
+  add-ons: <i class="fas fa-plus-circle i-li"></i>
+
+*/
+/*defaults*/
+.i-li{
+  color: var(--color2-normal);
+}/*List Icons*/ 
+
+.i-ok{
+  color: #11BF69;
+}/*ok*/
+
+.i-warn{
+  color: #FFD04F;
+}/*Warning*/
+
+.i-attn{
+  color: #FF4447;
+}/*Attention*/
+/*defaults*/
+
+/*CURRENT PROJECT*/
+.i-c1{
+  color:var(--color3-normal);
+}/*for featured products and special prices*/
+
+/*CURRENT PROJECT*/
+/*FA ICONS*/
+/*!==== 1. TEXT STYLES ====*/
+
+/*!==== 2. COLORS ====*/
+:root{
+  --black: 0; /* black(base)*/
+  --black-normal: hsla(var(--black), 0%, 0%, 1); /*Black (Normal)*/
+  --white-normal: hsla(var(--black), 0%, 100%, 1); /*white (Normal)*/
+
+  /*Scarlet*/
+  --color1: 355;
+  --color1-normal:hsla(var(--color1), 76%, 37%, 1);/*Scarlet (normal)*/
+  /*Scarlet*/
+ 
+  /* Red Candy*/
+  --color2: 355;
+  --color2-normal:hsla(var(--color2), 75%, 51%, 1);/*Red Candy (normal)*/
+  /* Red Candy*/
+
+  /*Honey Yellow*/
+  --color3: 44;
+  --color3-normal:hsla(var(--color3), 100%, 60%, 1);/*Honey Yellow (Normal)*/
+  /*Honey Yellow*/
+  
+  /*Jade*/
+  --color4: 150;
+  --color4-normal:hsla(var(--color4), 84%, 41%, 1);/*Jade(normal)*/
+  /*Jade*/  
+
+  /*GRADIENTS*/
+  --grad1: linear-gradient(
+    125deg,
+    hsla(var(--color6), 100%, 50%, 1) 0%,
+    hsla(var(--color2), 75%, 51%,1) 100%
+  );/*Tangerine to Imperial var(--color2-normal)*/
+  /*GRADIENTS*/
+
+  /*SHADOWS*/
+    --shadow1: 15px 15px 50px hsla(var(--black), 0%, 0%, 0.4); /*default shadow, used on large objects*/
+    --shadow1H: 15px 15px 50px hsla(var(--black), 0%, 0%, 0.7); /*default shadow, on hover*/
+  /*SHADOWS*/
+}
+/*!==== 2. COLORS ====*/
+
+/*!==== 3. BUTTONS ====*/
+/* Default Buttons:
+  <a href="#"><button class=" RB1 RB1_default">Call to Action</button></a>
+
+  Small Button:
+  <a href="#"><button class=" RB1 RB1_small">Call to Action (Small)</button></a> 
+*/
+/* BUTTON STYLES*/
+a .RB1{
+  font-family: "Poppins", arial, sans-serif;
+  font-weight: bold;
+  font-size: 1rem;
+  color: var(--white-normal);
+  text-align: center;
+  text-decoration: none;
+  
+  margin: 1em;
+  padding: 0.8em;
+  border:none;
+  border-radius: 100px;
+  
+  background-color: var(--color2-normal);
+  box-shadow: 0px 4px 8px hsla(var(--black), 0%, 0%, 0.3);
+  transition: var(--a250ms);
+  user-select: none;
+  cursor: pointer;  
+}/*Base*/
+
+a .RB1_default {
+  font-size: 0.9rem;
+  
+  margin: 1em;
+  padding: 0.8em;
+}/*Default Style*/
+
+a .RB1_small {
+  font-size: 0.8rem;
+  
+  margin: 1em;
+  padding: 0.5rem 0.8rem;
+}/*Small Style*/
+
+a .RB1_complementary {
+background: none;
+box-shadow: 0px 4px 8px hsla(var(--black), 0%, 0%, 0.3),
+            inset 0 0 0 0.17rem var(--color2-normal)!important;
+}/*Small Style*/
+
+/*BUTTON STYLES*/
+
+/*DETAILS*/
+.RB1_default:hover {
+  box-shadow: 0px 6px 12px hsla(var(--color2), 75%, 51%, 0.9);
+}/*Expands shadow on hover( Default Behavour)*/
+
+.RB1_small:hover {
+  box-shadow: 0px 5px 10px hsla(var(--color2), 75%, 51%, 0.9);
+}/*Expands shadow on hover( Default Behavour)*/
+
+a .RB1_complementary:hover {
+  background: var(--color2-normal);
+  box-shadow: 0px 6px 12px hsla(var(--color2), 75%, 51%, 0.9),
+            inset 0 0 0 0.17rem var(--color2-normal)!important;
+}
+
+button:focus{
+  transform: scale(0.9);
+  background-color: hsla(var(--color2), 75%, 40%, 1);
+  box-shadow: 0px 2px 2px hsla(var(--black), 0%, 0%, 0.3)!important;
+  outline: none;
+}/*Shrinks button on focus (Default behaviour)*/
+/*DETAILS*/
+
+/*EXTRAS*/
+.buttons-container {
+  width: 80%;
+  height: auto;
+  margin: 0.5rem auto 0 auto;
+  display: -webkit-box;
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+a .margin-L0{
+  margin-left:0;
+}
+
+a .margin-R0{
+  margin-right:0;
+}
+/*EXTRAS*/
+/*!==== 3. BUTTONS ====*/
+
+/*!==== 4. ANIMATIONS ====*/
+:root{
+  --a250ms: all 250ms ease-in-out; /*250ms ease-in-out*/
+  --a400ms: all 400ms ease-in-out; /*400ms ease-in-out*/
+}
+
+/*!==== 4. ANIMATIONS ====*/
+
+/*!==== 5. EXTRAS ====*/
+
+/*Updated: April 20, 2020*/
+/*SCROLL DOWN BUTTON 2*/
+/*! Copyright (c) 2015 https://www.nxworld.net/tips/css-scroll-down-button.html*/
+/* Place the following somewhere in the html:
+  <div class="sdb2-wrapper">
+    <a href="#" class="scroll-dwn2"><span></span></a>
+  </div>
+*/
+.sdb2-wrapper{
+  width: 80%;
+  height: auto;
+  margin: 0.5rem auto 0 auto;
+  display: -webkit-box;
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: center;
+}/*VARIANT OF BUTTONS-CONTAINER*/
+
+.scroll-dwn2{
+  margin:0.5rem;
+  bottom: 20px;
+  padding: 1.5rem 5rem 1rem 5rem;
+  z-index: 2;
+  display: inline-block;
+  transform: translate(0, -50%);
+  transition: var(--a400ms);
+  text-decoration: none;
+}
+.scroll-dwn2 span {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 20px;
+  height: 20px;
+  margin-left: -12px;
+  border-left: 2px solid black;
+  border-bottom: 2px solid black;
+  transform: rotate(-45deg);
+  animation: sdb2 2s infinite;
+  box-sizing: border-box;
+}
+@-webkit-keyframes sdb2 {
+  0% {
+    -webkit-transform: rotate(-45deg) translate(0, 0);
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: rotate(-45deg) translate(-20px, 20px);
+    opacity: 0;
+  }
+}
+@keyframes sdb2 {
+  0% {
+    -webkit-transform: rotate(-45deg) translate(0, 0);
+            transform: rotate(-45deg) translate(0, 0);
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: rotate(-45deg) translate(-20px, 20px);
+            transform: rotate(-45deg) translate(-20px, 20px);
+    opacity: 0;
+  }
+}
+
+/* DETAILS*/
+.scroll-dwn2:hover{
+  transform: translateY(1px);
+  transform:scale(0.8);
+}
+
+.scroll-dwn2:hover > span{
+  border-left: 2px solid var(--white-normal);
+  border-bottom: 2px solid var(--white-normal);
+}
+/* DETAILS*/
+/*SCROLL DOWN BUTTON 2*/
+
+/*Updated: May 4, 2020*/
+/*SOCIAL LINKS*/
+/* Place the following somewhere in the html:
+  <div class="social-links1">
+    <a href="https://es-la.facebook.com/"  target="_blank" rel="noopener noreferrer" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+    <a href="https://twitter.com/"  target="_blank" rel="noopener noreferrer" title="Twitter"><i class="fab fa-twitter"></i></a>
+    <a href="https://www.instagram.com/4lexmccarthy/"  target="_blank" rel="noopener noreferrer" title="Instagram"><i class="fab fa-instagram"></i></a>
+    <a href="https://www.pinterest.com/alegautier/"  target="_blank" rel="noopener noreferrer" title="Pinterest"><i class="fab fa-pinterest-p"></i></a>
+  </div>
+*/
+/*TEXT STYLES*/
+.social-links1 a {
+  display: block;
+  width: 2em;
+  height: 2em;
+  margin: 0.5em 0.3em;
+  background-color: var(--white-normal);
+
+  color: var(--black-normal);
+  font-size: 1.2rem;
+  text-align: center;
+  line-height: 2.1em;
+  border-radius: 100%;
+  transition: var(--a250ms);
+  box-shadow: 0px 2px 2px hsla(var(--black), 0%, 0%, 0.25);
+}
+/*TEXT STYLES*/
+.social-links1 {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+/* DETAILS*/
+.social-links1 a:hover {
+  color: var(--white-normal);
+  box-shadow: 0px 4px 4px hsla(var(--black), 0%, 0%, 0.25);
+}
+.social-links1 a:focus {
+  transform: scale(0.9);
+  box-shadow: 0px 2px 2px hsla(var(--black), 0%, 0%, 0.2);
+}
+/*FACEBOOK*/
+.social-links1 > [title~=Facebook]:hover{
+  background-color: #1877F2;
+}
+/*TWITTER*/
+.social-links1 > [title~=Twitter]:hover{
+  background-color: #1DA1F2;
+}
+/*INSTAGRAM*/
+.social-links1 > [title~=Instagram]:hover{
+  background-color: #C32AA3;
+}
+
+/*PINTEREST*/
+.social-links1 > [title~=Pinterest]:hover{
+  background-color: #BD081C;
+}
+/* DETAILS*/
+
+/*SOCIAL LINKS*/
+
+/*Updated: April 29, 2020*/
+/*SCROLL TO TOP BUTTON*/
+/* Place the following somewhere in the html:
+<a href="#" class="scroll-top1" title="Volver al Inicio de la Pagina" style="display: none;"> <i class="fas fa-chevron-up"></i></a>
+*/
+
+.scroll-top1 {
+  display: block;
+  position: fixed;
+  z-index: 9700;
+
+  width: 2.1em;
+  height: 2.1em;
+  bottom: 3%;
+  right: 2%;
+
+  border-radius: 100%;
+  background-color: var(--color3-normal);
+  transition: var(--a250ms);
+
+  /*TEXT STYLES*/
+  color: var(--black-normal);
+  text-align: center;
+  line-height: 2.1em;
+  font-size: 1.5rem;
+  text-decoration: none;
+  box-shadow: 0px 4px 8px hsla(var(--black), 0%, 0%, 0.2);
+}
+/*DETAILS*/
+.scroll-top1:hover {
+  background-color:var(--color2-normal);
+  color: var(--color3-normal);
+  box-shadow: 0px 6px 12px hsla(var(--black), 0%, 0%, 0.2);
+}
+
+.scroll-top1:focus {
+  transform: scale(0.9);
+  background-color:var(--color2-normal);
+  color: var(--color3-normal);
+  box-shadow: 0px 2px 4px hsla(var(--black), 0%, 0%, 0.2);
+}
+/*DETAILS*/
+/*SCROLL TO TOP BUTTON*/
+
+/*LAST UPDATED: SEPTEMBER 11, 2019*/
+/*This instace: April 23, 2020*/
+/*EMBEDDED FROM RECTANGLE ITEMS 1 (VERTICAL)*/
+.vertical-items1 {
+  position: relative;
+  width: 55%;
+  margin: 1.5%;
+  overflow: hidden;
+  transition: var(--a400ms);
+  box-shadow: var(--shadow1);
+}
+.vertical-items1:after {
+  content: "";
+  display: block;
+  padding-top: 135%;
+}
+
+.vertical-items1_content {
+  position: absolute;
+  height: 100%;
+  /*height: 100%; /depends if content is in HTML or CSS*/
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+/*EMBEDDED FROM RECTANGLE ITEMS 1 (VERTICAL)*/
+
+/*PARALLAX*/
+.parallax1 {
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+}
+/*PARALLAX*/
+
+/*!==== 5. EXTRAS ====*/
+
+/*!==== MEDIA QUERIES====*/
+@media screen and (max-width: 2000px) {
+  /*1. TEXT STYLES*/
+  :root {
+    font-size: 20px;
+  }
+  /*1. TEXT STYLES*/
+}
+
+@media screen and (max-width: 1440px) {
+  /*1. TEXT STYLES*/
+  :root {
+    font-size: 18px;
+    --tw1: 60%;
+  }
+  .featured-title{
+    font-size:3.5rem;
+}
+
+.h2s {
+  font-size: 2.85rem;
+}
+  /*1. TEXT STYLES*/
+  /*3. BUTTONS*/
+  a .RB1_default {
+    font-size: 0.85rem;
+  }
+  /*3. BUTTONS*/
+}
+
+@media screen and (max-width:1280px){
+  /*1. TEXT STYLES*/
+  :root {
+    font-size: 16px;
+  }
+  /*1. TEXT STYLES*/
+
+  /*5. EXTRAS*/
+  .vertical-items1 {
+    width: 60%;
+  }
+  /*5. EXTRAS*/
+}/*Small Laptops*/
+
+@media screen and (max-width:900px), (min-height:1200px){
+
+}/*IPad Pro (Delete if not used)*/
+
+@media screen and (max-width:900px){
+  /*1. TEXT STYLES*/
+  :root {
+    --lhp1: 1.5;
+    --lhlp1: 1.8;
+    --tw1: 70%;
+    --twh1: 90%;
+    --tm2: 6% 0;
+  }
+
+  .featured-title{
+    font-size:3.5rem;
+}
+  /*1. TEXT STYLES*/
+
+  /*2. COLORS*/
+  :root{
+    --shadow1: 15px 15px 30px hsla(var(--color1), 37%, 23%, 0.4);
+    --shadow1H: 15px 15px 30px hsla(var(--color1), 37%, 23%, 0.7);
+    }
+  /*2. COLORS*/
+
+  /*3. BUTTONS*/
+  a .RB1 {
+    box-shadow: 0px 3px 6px hsla(var(--black), 0%, 0%, 0.3);
+  }
+
+  .RB1_default:hover {
+    box-shadow: 0px 5px 10px hsla(var(--color2), 75%, 51%, 0.9);
+  }
+  
+  .RB1_small:hover {
+    box-shadow: 0px 4px 8px hsla(var(--color2), 75%, 51%, 0.9);
+  }
+  /*3. BUTTONS*/  
+
+  /*5. EXTRAS*/
+  .social-links1 a {
+    font-size: 1.5rem;
+  }
+  .scroll-top1 {
+    background-color: var(--color3-normal);
+    color: var(--black-normal);
+    box-shadow: 0px 4px 8px hsla(var(--black), 0%, 0%, 0.4);
+    right: 4%;
+    bottom: 2.5%;
+  }
+
+  .vertical-items1 {
+    width: 90%;
+  }
+  /*5. EXTRAS*/
+
+}/*Tablets*/
+
+@media screen and (max-width:600px){
+  .inner-paddings1 {
+    padding: 50px 20px;
+  }
+  /*1. TEXT STYLES*/
+  :root {
+    --tw1: 95%;
+    --twh1: 100%;
+    --twh2: 80%;
+    --tm2: 8% 0;
+  }
+  .featured-title{
+    font-size:3rem;
+  }
+
+  .h2s {
+    font-size: 2.25rem;
+  }
+
+  .h3s {
+    font-size: 1.7rem;
+  }
+  /*1. TEXT STYLES*/
+  /*2. COLORS*/
+    :root{
+      --shadow1: 15px 15px 25px hsla(var(--color1), 37%, 23%, 0.4);
+      --shadow1H: 15px 15px 25px hsla(var(--color1), 37%, 23%, 0.7);
+      }
+  /*2. COLORS*/
+
+  /*5. EXTRAS*/
+  .vertical-items1 {
+    width: 100%;
+  }
+  /*5. EXTRAS*/
+
+}/*Smartphones*/
+
+@media screen and (max-width:900px) and (orientation:landscape){
+  /*5. EXTRAS*/
+  .scroll-top1 {
+    right: 3%;
+    bottom: 4%;
+  }
+  /*5. EXTRAS*/
+
+}/*Smartphones on landscape*/
+/*!==== MEDIA QUERIES====*/
+
+
+	
+
+
+    
