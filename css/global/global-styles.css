@@ -1,4 +1,4 @@
-/*!LAST UPDATED: May 14, 2020*/
+/*!LAST UPDATED: May 17, 2020*/
 /*!==== INDEX ====
     GENERAL PROPERTIES (Updated: april 20, 2020)
     1. TEXT STYLES (Updated: May 10, 2020)
@@ -6,7 +6,7 @@
     3. BUTTONS (Updated: May 8, 2020)
     4. ANIMATIONS (Updated: april 29, 2020)
     5. EXTRAS (Updated: May 13, 2020)
-    MEDIA QUERIES (Updated: april 20, 2020)
+    MEDIA QUERIES (Updated: May 17, 2020)
 
 ==== INDEX ====*/
 
@@ -754,6 +754,9 @@ a .margin-R0{
   .vertical-items1 {
     width: 100%;
   }
+  .parallax1 {
+    background-attachment:scroll;
+  }
   /*5. EXTRAS*/
 
 }/*Smartphones*/
@@ -763,6 +766,9 @@ a .margin-R0{
   .scroll-top1 {
     right: 3%;
     bottom: 4%;
+  }
+  .parallax1 {
+    background-attachment:scroll;
   }
   /*5. EXTRAS*/
 
