@@ -1,12 +1,10 @@
-/*!LAST UPDATED: May 13, 2019*/
+/*!LAST UPDATED: May 16, 2019*/
 /*!==== INDEX ====
     0. LIGHTBOX1 (Updated: May 12, 2020)
     1. TS2_HEADER2 (Updated: May 13, 2020) [based on TS2_HEADER1]
     2. TS2_ABOUT1 (Updated: may 12, 2020)
-    3. TS2_PRODUCTS1 (Updated: May 8, 2020)
     4. TS2_PRO-DET1 (Updated: May 10, 2020)
     5. TS2_FEATURED1 (Updated: May 13, 2020)
-    6. TS2_TESTIMONIALS (pending)
     7. TS2_QUOTE1 (Updated: May   5, 2020)
     MEDIA QUERIES (Updated: May 10, 2020)
 
@@ -237,227 +235,6 @@ width:85%
 /* DETAILS*/
 /*!==== 2. TS2_ABOUT1 ====*/
 
-/*!==== 3. TS2_PRODUCTS1 ====*/
-/*TEXT STYLES*/
-.TS2_products1_h2s{
-  color: var(--color3-normal);
-  align-self: flex-start;
-}
-
-.TS2_products1_p1s{
-  color: var(--white-normal);
-  text-align: left;
-}
-
-.TS2_products1_item-content > .h2s,
-.TS2_products1_item-content > .p1s,
-.TS2_products1_item-content > .note1{
-  transition:all 1ms ease-in-out;
-  transform: translateY(2%);
-}
-
-.TS2_products1_item-content > .h2s{
-  color: var(--color3-normal);
-}
-
-.TS2_products1_item-content > .p1s{
-  color: var(--white-normal);
-  margin:0 0 0.5rem 0;
-  display: none;
-  opacity: 0;
-}
-
-.TS2_products1_item-content > .note1{
-  color: var(--white-normal);
-  margin: 2rem 0 0.5rem 0;
-  display: none;
-  opacity: 0;
-}
-
-.TS2_products1_item-content > .buttons-container > a{
-  opacity: 0;
-  height:0;
-  transition: var(--a400ms);
-}
-/*TEXT STYLES*/
-
-.TS2_products1{
-  width:100%;
-  min-height:100vh;
-
-  display: flex;
-  flex-flow: column nowrap;
-  align-items: center;
-  justify-content: center;
-  position: relative;
-  z-index: 100;
-}
-.TS2_products1 svg{
-  display:block;
-  width: 100%;
-  top:-2px;
-  left:0;
-
-  position: absolute;
-  z-index: 200;
-}
-.TS2_products1_container{
-  width: 80%;
-
-  display: grid;
-  grid-template-columns: repeat(2,1fr);
-  gap:4rem;
-  justify-items: center;
-  align-items: center;
-  z-index: 210;
-}/*main container*/
-
-.TS2_products1_item{
-  position: relative;
-  width: 90%;
-  margin: 1.5%;
-  overflow: hidden;
-
-  background-size: cover;
-  background-position: center;
-
-  display: flex;
-  flex-flow: column nowrap;
-  align-items: center;
-  justify-content: center;
-
-  transition: all 350ms ease;
-  box-shadow: var(--shadow1);
-}/*container for each item inside the main container*/
-
-.TS2_products1_item:after {
-  content: "";
-  display: block;
-  padding-top:65%;
-}
-#svg-filter{
-  display: none;
-}
-/*ITEM'S BACKGROUND*/
-
-/* pr-alitas1*/
-.no-webp #pr-alitas1 {
-  background-image: url(../../assets/product/alitas/alitas1.jpg);
-}
-
-.webp #pr-alitas1{
-  background-image: url(../../assets/product/alitas/alitas1.webp);
-}
-
-.no-js #pr-alitas1 {
-  background-image: url(../../assets/product/alitas/alitas1.jpg);
-}
-/* pr-alitas1*/
-
-/*pr-burgers1*/
-.no-webp #pr-burgers1 {
-  background-image: url(../../assets/product/burger/burger1.jpg);
-}
-
-.webp #pr-burgers1{
-  background-image: url(../../assets/product/burger/burger1.webp);
-}
-
-.no-js #pr-burgers1{
-  background-image: url(../../assets/product/burger/burger1.jpg);
-}
-/*pr-burgers1*/
-
-/*pr-sandwich1*/
-.no-webp #pr-sandwich1 {
-  background-image: url(../../assets/product/sandwich/sandwich1.jpg);
-}
-
-.webp #pr-sandwich1{
-  background-image: url(../../assets/product/sandwich/sandwich1.webp);
-}
-
-.no-js #pr-sandwich1{
-  background-image: url(../../assets/product/sandwich/sandwich1.jpg);
-}
-/*pr-sandwich1*/
-
-/*pr-salad1*/
-.no-webp #pr-salad1{
-  background-image: url(../../assets/product/salad/salad1.jpg);
-}
-
-.webp #pr-salad1{
-  background-image: url(../../assets/product/salad/salad1.webp);
-}
-
-.no-js #pr-salad1{
-  background-image: url(../../assets/product/salad/salad1.jpg);
-}
-/*pr-salad1*/
-/*ITEM'S BACKGROUND*/
-
-.TS2_products1_item-content{
-  height: 100%;
-  width: 100%;
-  padding: 2rem;
-  display:flex;
-  flex-flow: column nowrap;
-  align-items: center;
-  justify-content: center;
-  position: absolute;
-  transition: var(--a250ms);
-  background-color: hsla(var(--black),0%, 0%, 0.3);
-}/**/
-
-.TS2_products1_info{
-  width:80%;
-
-  display: flex;
-  flex-flow: column nowrap;
-  align-items: center;
-  justify-content: center;
-}/*title and body text goes here!*/
-
-
-
-/*DETAILS*/
-.TS2_products1_info> .buttons-container{
-  justify-content: flex-start;
-  margin-left: 0;
-  }
-  .TS2_products1_item-content > .buttons-container{
-    margin-top: 0;
-  }
-  
-/* RECTANGLE ITEMS*/
-  .TS2_products1_item:hover{
-    box-shadow: var(--shadow1H);
-  }
-  
-  .TS2_products1_item:hover > .TS2_products1_item-content{
-    background-color: hsla(var(--black), 0%, 0%, 0.6);
-  }
-  
-  .TS2_products1_item:hover > .TS2_products1_item-content > .h2s{
-  transform: translateY(-1%);
-  }
-  
-  .TS2_products1_item:hover > .TS2_products1_item-content > .buttons-container > a{
-    opacity: 100%;
-    height:auto;
-  }
-  .TS2_products1_item:hover > .TS2_products1_item-content > .p1s,
-  .TS2_products1_item:hover > .TS2_products1_item-content > .note1{
-  display: block;
-  opacity: 100%;
-}
-
-  /* RECTANGLE ITEMS*/
-  
-/*DETAILS*/
-/*!==== 3. TS2_PRODUCTS1 ====*/
-
 /*!==== 4. TS2_PRO-DET1 ====*/
 
 /*TEXT STYLES*/
@@ -510,7 +287,7 @@ width:85%
   z-index:200;
 }
 
-.svgt svg{
+.svgt{
   display:block;
   width: 100%;
   top:-2px;
@@ -520,7 +297,7 @@ width:85%
   z-index: 210;
 }/*svg top*/
 
-.svgb svg{
+.svgb{
   display:block;
   width: 100%;
   bottom:-2px;
@@ -631,6 +408,7 @@ width: 100%;
 /*INFO*/
 .TS2_pro-det1_info{
   width: 80%;
+  margin-bottom: 4rem;
 }
 .TS2_pro-det1_list1{
   list-style: none;
@@ -954,24 +732,7 @@ width: 100%;
     width:90%
   }
   /*2. TS2_ABOUT1*/
-  /*3. TS2_PRODUCTS1*/
-  .TS2_products1_container{
-    width: 85%;
-    gap:2.5rem;
-    }
   
-    .TS2_products1_info{
-      width:85%;
-  }
-  .TS2_products1_item{
-    width: 85%;
-  }
-  
-  .TS2_products1_item:after {
-    padding-top:70%;
-  }
-  /*3. TS2_PRODUCTS1*/
-
   /*4. TS2_PRO-DET1*/
   .TS2_pro-det1_info{
     width: 85%;
@@ -997,18 +758,7 @@ width: 100%;
     margin: 0 auto 0 3rem;
   }
   /*1. TS2_HEADER2*/
-
-  /*3. TS2_PRODUCTS1*/
-  .TS2_products1_container{
-    width: 95%;
-    gap:2rem;
-    }
-
-    .TS2_products1_item:after {
-      padding-top:75%;
-    }
-    /*3. TS2_PRODUCTS1*/
-}/*EXCLUSIVE FOR TS2_PRODUCTS1-ITEMS! -- ON SMALL LATOPS*/
+}
 
 @media screen and (max-width: 1024px) {
   /*5. TS2_FEATURED1*/
@@ -1096,54 +846,6 @@ width: 100%;
     justify-content: center;
   }
   /*2. TS2_ABOUT1*/
-  /*3. TS2_PRODUCTS1*/
-  .TS2_products1_info{
-    width:80%;
-  }
-
-  .TS2_products1_container{
-    grid-template-columns: repeat(1,1fr);
-  }
-
-  .TS2_products1_h2s{
-    color: var(--color3-normal);
-    align-self: center;
-    margin-top: 5rem;
-  }
-  
-  .TS2_products1_p1s{
-    text-align: center;
-  }
-
-  .TS2_products1_info> .buttons-container{
-    justify-content: center;
-    margin-left: auto;
-  }
-  .TS2_products1_info> .buttons-container > a >.margin-L0{
-    margin-left: 1em;
-  }
-
-  .TS2_products1_item{
-    width:80%;
-  }
-  .TS2_products1_item:after {
-    padding-top:70%;
-  }
-
-  .TS2_products1_item-content > .buttons-container > a{
-    opacity: 100%;
-    height:auto;
-  }
-
-.TS2_products1_item-content > .p1s,
-.TS2_products1_item-content > .note1{
-  display: block;
-  opacity: 100%;
-}
-.TS2_products1_item-content {
-  background-color:hsla(var(--black),0%, 0%, 0.6)
-  }
-  /*3. TS2_PRODUCTS1*/
 
   /*5. TS2_FEATURED1*/
   .TS2_featured1_container{
@@ -1209,45 +911,6 @@ width: 100%;
     justify-content: center;
   }
   /*2. TS2_ABOUT1*/
-  /*3. TS2_PRODUCTS1*/
-  .TS2_products1_info{
-    width:80%;
-  }
-
-  .TS2_products1_container{
-    grid-template-columns: repeat(1,1fr);
-  }
-
-  .TS2_products1_h2s{
-    color: var(--color3-normal);
-    align-self: center;
-  }
-  
-  .TS2_products1_p1s{
-    text-align: justify;
-  }
-
-  .TS2_products1_info> .buttons-container{
-    justify-content: center;
-    margin-left: auto;
-  }
-  .TS2_products1_info> .buttons-container > a >.margin-L0{
-    margin-left: 1em;
-  }
-
-  .TS2_products1_item-content > .buttons-container > a{
-    opacity: 100%;
-    height:auto;
-  }
-  .TS2_products1_item-content > .p1s,
-  .TS2_products1_item-content > .note1{
-    display: block;
-    opacity: 100%;
-  }
-  .TS2_products1_item-content {
-  background-color:hsla(var(--black),0%, 0%, 0.6)
-  }
-  /*3. TS2_PRODUCTS1*/
 
   /*4. TS2_PRO-DET1*/
   .TS2_pro-det1_wrapper {
@@ -1334,7 +997,7 @@ width: 100%;
   /*1. TS2_HEADER2*/
   .TS2_header2-info{
     width:100%;
-    margin: 1rem auto 8rem auto;
+    margin: 0 auto 8rem auto;
     padding: 0.5rem;
   }
   .TS2_header2 > .sdb2-wrapper{
@@ -1375,38 +1038,6 @@ width: 100%;
     margin: 2rem 0;
   }
   /*2. TS2_ABOUT1*/
-
-  /*3. TS2_PRODUCTS1*/
-  .TS2_products1_h2s{
-    margin-top: 3rem;
-  }
-  .TS2_products1_info{
-    width:100%;
-  }
-
-  .TS2_products1_container{
-    width: 100%;
-    gap:2rem;
-  }
-
-    .TS2_products1_item{
-      width: 100%;
-  }
-
-    .TS2_products1_item:after {
-      padding-top:115%;
-  }
-
-    .TS2_products1_item-content{
-      padding: 1rem;
-      background-color: hsla(var(--black),0% ,0%, 0.6);
-  }
-  
-    .TS2_products1_item-content > .buttons-container > a{
-      opacity: 100%;
-      height:auto;
-  }
-  /*3. TS2_PRODUCTS1*/
 
   /*4. TS2_PRO-DET1*/
   .TS2_pro-det1_container1 {
@@ -1467,7 +1098,7 @@ width: 100%;
   /*1. TS2_HEADER2*/
   .TS2_header2-info{
     width:80%;
-    margin: 1rem auto 10rem auto;
+    margin: 0 auto 10rem auto;
     padding: 0.8rem;
   }
   .TS2_header2 > .sdb2-wrapper{
@@ -1491,28 +1122,6 @@ width: 100%;
   }  
   /*2. TS2_ABOUT1*/
 
-  /*3. TS2_PRODUCTS1*/
-  .TS2_products1_h2s{
-    margin-top: 4rem;
-  }
-    .TS2_products1_info{
-      width:90%;
-    }
-    .TS2_products1_item{
-      width:70%;
-    }
-    .TS2_products1_item:after {
-      padding-top:75%;
-    }
-
-    .TS2_products1_item-content{
-      padding: 1rem;
-      background-color: hsla(var(--black),0% ,0%, 0.6);
-  }
-  /*3. TS2_PRODUCTS1*/
-
-  /*4. TS2_PRO-DET1*/
-
   /*4. TS2_PRO-DET1*/
   .TS2_pro-det1_container1 {
     padding: 0.5rem 2.5rem;
@@ -1521,6 +1130,7 @@ width: 100%;
   .TS2_pro-det1_container2 {
     height: 100vh;
   }
+  /*4. TS2_PRO-DET1*/
 
   /*5. TS2_FEATURED1*/
   .TS2_featured1_items-wrapper{
