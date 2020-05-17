@@ -1,12 +1,12 @@
-/*!LAST UPDATED: May 16, 2019*/
+/*!LAST UPDATED: May 17, 2019*/
 /*!==== INDEX ====
     0. LIGHTBOX1 (Updated: May 12, 2020)
-    1. TS2_HEADER2 (Updated: May 13, 2020) [based on TS2_HEADER1]
+    1. TS2_HEADER2 (Updated: May 17, 2020) [based on TS2_HEADER1]
     2. TS2_ABOUT1 (Updated: may 12, 2020)
-    4. TS2_PRO-DET1 (Updated: May 10, 2020)
-    5. TS2_FEATURED1 (Updated: May 13, 2020)
+    4. TS2_PRO-DET1 (Updated: May 17, 2020)
+    5. TS2_FEATURED1 (Updated: May 17, 2020)
     7. TS2_QUOTE1 (Updated: May   5, 2020)
-    MEDIA QUERIES (Updated: May 10, 2020)
+    MEDIA QUERIES (Updated: May 17, 2020)
 
 ==== INDEX ====*/
 
@@ -408,7 +408,7 @@ width: 100%;
 /*INFO*/
 .TS2_pro-det1_info{
   width: 80%;
-  margin-bottom: 4rem;
+  margin: 4rem auto;
 }
 .TS2_pro-det1_list1{
   list-style: none;
@@ -686,6 +686,13 @@ width: 100%;
     width:40%;
   }
   /*1. TS2_HEADER2*/
+
+  /*1. TS2_HEADER2*/
+  .TS2_pro-det1_info{
+    margin: 10rem auto;
+  }
+  /*4. TS2_PRO-DET1*/
+
   /*5. TS2_FEATURED1*/
   .TS2_featured1_items-wrapper{
     width: 60%;
@@ -788,7 +795,7 @@ width: 100%;
   }
 
   .TS2_header2_note-container > .note1,
-    .TS2_header2_note-container > .note12{
+    .TS2_header2_note-container > .note2{
     margin: 0.5rem auto;
   }
   .TS2_header2_buttons-container {
@@ -805,7 +812,7 @@ width: 100%;
     margin: auto;
   }
   .TS2_header2 > .sdb2-wrapper{
-    bottom: 10vh;
+    bottom: 5vh;
   }
   .TS2_header2 > .sdb2-wrapper > a > span{
     border-left: 2px solid var(--white-normal);
@@ -874,7 +881,7 @@ width: 100%;
   }
 .TS2_header2-info{
     width:90%;
-    margin: auto;
+    margin: 4rem auto;
   }
   /*1. TS2_HEADER2*/
   /*2. TS2_ABOUT1*/
@@ -925,7 +932,7 @@ width: 100%;
 
   .TS2_pro-det1_info{
     width:80%;
-    margin: 2rem;
+    margin: 2rem auto;
   }
   
   .TS2_pro-det1_h2{
@@ -997,11 +1004,11 @@ width: 100%;
   /*1. TS2_HEADER2*/
   .TS2_header2-info{
     width:100%;
-    margin: 0 auto 8rem auto;
+
     padding: 0.5rem;
   }
   .TS2_header2 > .sdb2-wrapper{
-    bottom: 15vh;
+    bottom: 5vh;
   }
 
   .TS2_header2_note-container{
@@ -1098,11 +1105,10 @@ width: 100%;
   /*1. TS2_HEADER2*/
   .TS2_header2-info{
     width:80%;
-    margin: 0 auto 10rem auto;
     padding: 0.8rem;
   }
   .TS2_header2 > .sdb2-wrapper{
-    bottom: 40vh;
+    bottom: 10vh;
   }
   /*1. TS2_HEADER2*/
 

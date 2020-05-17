@@ -1,5 +1,4 @@
-//! LAST UPDATED: May 16, 2019
-
+//! LAST UPDATED: May 17, 2019
 
 /* Vanilla JavaScript Smooth Scroll 
     Maximillian Heth on codepen.io:
@@ -11,8 +10,6 @@ document.addEventListener('click', function(e) {
     scrollAnchors(e, e.target);    
   }  
 });
-
-			
 			function scrollAnchors(e, respond = null) {
         function distanceToTop(el) { 
           return Math.floor(el.getBoundingClientRect().top); 
