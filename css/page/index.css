@@ -1,12 +1,12 @@
-/*!LAST UPDATED: May 17, 2019*/
+/*!LAST UPDATED: May 18, 2019*/
 /*!==== INDEX ====
-    0. LIGHTBOX1 (Updated: May 12, 2020)
+    0. LIGHTBOX1 (Updated: May 18, 2020)
     1. TS2_HEADER2 (Updated: May 17, 2020) [based on TS2_HEADER1]
     2. TS2_ABOUT1 (Updated: may 12, 2020)
-    4. TS2_PRO-DET1 (Updated: May 17, 2020)
+    4. TS2_PRO-DET1 (Updated: May 18, 2020)
     5. TS2_FEATURED1 (Updated: May 17, 2020)
     7. TS2_QUOTE1 (Updated: May   5, 2020)
-    MEDIA QUERIES (Updated: May 17, 2020)
+    MEDIA QUERIES (Updated: May 18, 2020)
 
 ==== INDEX ====*/
 
@@ -16,7 +16,8 @@
   color:var(--color2-normal);
 }
 
-.popup1_content > .p1s{
+.popup1_content > .p1s,
+.popup1_content > .note1{
   color:var(--black-normal);
 }
 /*TEXT STYLES*/
@@ -49,7 +50,7 @@
 /*popup content*/
 .popup1_content{
   background: var(--color3-normal);
-  max-width: 50%;
+  max-width: 70%;
   max-height: 100vh;
   padding: 2rem;
   margin: auto;
@@ -77,11 +78,11 @@
   color: var(--white-normal);
 }
 
-.TS2_header2_note-container> .note1,
+/*.TS2_header2_note-container> .note1,
 .TS2_header2_note-container> p > .note-lt{
   color: var(--white-normal);
   margin: 0.5rem 2rem 0.5rem 0;
-} 
+} */
 /*TEXT STYLES*/
 
 /*BACKGROUND IMG*/
@@ -789,7 +790,7 @@ width: 100%;
     text-align: center;
   }
 
-  .TS2_header2_note-container{
+  /*.TS2_header2_note-container{
     width:100%;
     align-items: center;
   }
@@ -801,7 +802,7 @@ width: 100%;
   .TS2_header2_buttons-container {
     align-items: center;
     justify-content: center;
-  }
+  }*/
 
   .TS2_header2_buttons-container > a .margin-L0{
     margin: 1em;
@@ -1011,7 +1012,7 @@ width: 100%;
     bottom: 5vh;
   }
 
-  .TS2_header2_note-container{
+  /*.TS2_header2_note-container{
     width:100%;
     align-items: center;
     justify-content: center;
@@ -1020,7 +1021,7 @@ width: 100%;
   .TS2_header2_note-container > .note1,
   .TS2_header2_note-container > p >.note-lt{
     margin: 0.5rem auto;
-  }
+  }*/
   /*1. TS2_HEADER2*/
 
   /*2. TS2_ABOUT1*/
