@@ -1,9 +1,9 @@
-/*!LAST UPDATED: May 18, 2019*/
+/*!LAST UPDATED: May 20, 2019*/
 /*!==== INDEX ====
     0. LIGHTBOX1 (Updated: May 18, 2020)
-    1. TS2_HEADER2 (Updated: May 17, 2020) [based on TS2_HEADER1]
+    1. TS2_HEADER2 (Updated: May 20, 2020) [based on TS2_HEADER1]
     2. TS2_ABOUT1 (Updated: may 12, 2020)
-    4. TS2_PRO-DET1 (Updated: May 18, 2020)
+    4. TS2_PRO-DET1 (Updated: May 20, 2020)
     5. TS2_FEATURED1 (Updated: May 17, 2020)
     7. TS2_QUOTE1 (Updated: May   5, 2020)
     MEDIA QUERIES (Updated: May 18, 2020)
@@ -87,15 +87,15 @@
 
 /*BACKGROUND IMG*/
 .no-webp .TS2_header2 {
-  background-image: url(../../assets/page/index/header-alitas1.jpg);
+  background-image: url(../../assets/page/index/header-alitas2.jpg);
 }
 
 .webp .TS2_header2{
-  background-image: url(../../assets/page/index/header-alitas1.webp);
+  background-image: url(../../assets/page/index/header-alitas2.webp);
 }
 
 .no-js .TS2_header2 {
-  background-image: url(../../assets/page/index/header-alitas1.jpg);
+  background-image: url(../../assets/page/index/header-alitas2.jpg);
 }
 /*BACKGROUND IMG*/
 .TS2_header2 {
@@ -342,15 +342,15 @@ width:85%
 /*BACKGROUND IMGs*/
 /*pro-det_alitas1*/
 .no-webp #pro-det_alitas1{
-  background-image: url(../../assets/product/alitas/alitas2.jpg);
+  background-image: url(../../assets/product/alitas/alitas3.jpg);
 }
 
 .webp #pro-det_alitas1{
-  background-image: url(../../assets/product/alitas/alitas2.webp);
+  background-image: url(../../assets/product/alitas/alitas3.webp);
 }
 
 .no-js #pro-det_alitas1 {
-  background-image: url(../../assets/product/alitas/alitas2.jpg);
+  background-image: url(../../assets/product/alitas/alitas3.jpg);
 }
 /*pro-det_alitas1*/
 
@@ -1054,9 +1054,6 @@ width: 100%;
 
   .TS2_pro-det1_info{
     width:100%;
-  }
-  .TS2_pro-det1_p1{
-    text-align: justify;
   }
   .TS2_pro-det1_note-container{
     width:100%;
