@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="es-419 " class="no-js" style="background:var(--color3-normal)">
-<!--LAST UPDATED: May 20 2020-->
+<!--LAST UPDATED: May 22 2020-->
 <head>
   <script>document.documentElement.classList.remove("no-js");</script> <!-- Webp fix-->
   <meta charset="utf-8">
@@ -43,7 +43,30 @@
   </script>
   <!--LOCAL SCRIPTS-->
   <!--SCRIPTS/PLUGINS-->
+  <!-- Facebook Pixel Code -->
+  <script>
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window,document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '268045134577488'); 
+    fbq('track', 'PageView');
+  </script>
+  <noscript>
+  <img height="1" width="1" 
+    src="https://www.facebook.com/tr?id=268045134577488&ev=PageView
+    &noscript=1"/>
+  </noscript>
+  <!-- End Facebook Pixel Code -->
 </head>
+<body onload="showPopup()">
+  <script>
+    fbq('track', 'ViewContent');
+  </script>
 <body onload="showPopup()">
 <!--MOBILE MENU2-->
 <nav id="menu2-mobile" style="background: var(--black-normal);">
