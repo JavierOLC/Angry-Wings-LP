@@ -1,11 +1,11 @@
-/*!LAST UPDATED: May 20, 2019*/
+/*!LAST UPDATED: May 21, 2019*/
 /*!==== INDEX ====
     0. LIGHTBOX1 (Updated: May 18, 2020)
     1. TS2_HEADER2 (Updated: May 20, 2020) [based on TS2_HEADER1]
     2. TS2_FEATURED2 (Updated: may 12, 2020) [Based on TS2_FEATURED1]
-    4. TS2_PRO-DET1 (Updated: May 20, 2020)
+    4. TS2_PRO-DET1 (Updated: May 21, 2020)
     5. TS2_FEATURED1 (Updated: May 20, 2020)
-    7. TS2_QUOTE1 (Updated: May   5, 2020)
+    7. TS2_QUOTE1 (Updated: May 21, 2020)
     MEDIA QUERIES (Updated: May 18, 2020)
 
 ==== INDEX ====*/
@@ -402,7 +402,7 @@ width: 100%;
 /*INFO*/
 .TS2_pro-det1_info{
   width: 80%;
-  margin: 4rem auto;
+  margin: 4rem auto 6rem auto;
 }
 .TS2_pro-det1_list1{
   list-style: none;
@@ -661,19 +661,27 @@ width: 100%;
   color: var(--white-normal);
   width: 80%
 }
+.TS2_quote1 > .note-container > p{
+  margin:auto; 
+  color:var(--white-normal);
+}
 /*TEXT STYLES*/
 
-/*DETAILS*/
 .TS2_quote1{
   min-height:50vh;
   width: 100%;
-
+  
   display: flex;
   flex-flow: column nowrap;
   align-items: center;
   justify-content: center;
-
 }
+
+.TS2_quote1 > .note-container{
+  margin-top: 3rem;
+}
+/*DETAILS*/
+
 /*DETAILS*/
 
 /*!==== 7. TS2_QUOTE1 ====*/
