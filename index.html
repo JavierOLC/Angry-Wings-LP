@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="es" class="no-js" style="background:var(--color3-normal)">
-<!--LAST UPDATED: May 31 2020-->
+<!--LAST UPDATED: June 5, 2020-->
 <head>
   <script>document.documentElement.classList.remove("no-js");</script> <!-- Webp fix-->
   <meta charset="utf-8">
@@ -10,14 +10,29 @@
   <link rel="shortcut icon" type="image/png" href="assets/global/aw-fav1.png"><!--favicon-->
 
   <!-- FIRST THINGS FIRST!-->
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Poppins:wght@700&display=swap" rel="stylesheet"> <!--Google Fonts API-->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"> <!--Font Awesome 5.13.0 fast CDN-->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Poppins:wght@700&display=swap"> <!--Google Fonts API-->
   <!-- FIRST THINGS FIRST!-->
   
   <!--STYLESHEETS-->
   <link rel="stylesheet" href="css/global/global-styles.min.css"><!--GLOBAL STYLES-->
   <link rel="stylesheet" href="css/global/nav.min.css"><!--MENU / FOOTER-->
+  <style type="text/css">
+    /*BACKGROUND IMG*/
+    .no-webp .TS2_header2 {
+      background-image: url(assets/page/index/header-alitas2.jpg);
+    }
+    
+    .webp .TS2_header2{
+      background-image: url(assets/page/index/header-alitas2.webp);
+    }
+    
+    .no-js .TS2_header2 {
+      background-image: url(assets/page/index/header-alitas2.jpg);
+    }
+    /*BACKGROUND IMG*/
+  </style><!--First Contentful Paint -->
   <link rel="stylesheet" href="css/page/index.min.css"><!--CURRENT PAGE-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"> <!--Font Awesome 5.13.0 fast CDN-->
   <!--PLUGINS-->
   <!--PLUGINS-->
   <!--STYLESHEETS-->
@@ -27,7 +42,7 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script> <!--JQuery 3.4.1 Fast CDN-->
   <script src="js/global/global-scripts.js" defer="defer"></script> <!--GLOBAL SCRIPTS-->
   
-  <!--LOCAL SCRIPTS-->>
+  <!--LOCAL SCRIPTS-->
   <script>
     /*for popup1 on load*/
     function showPopup() {
@@ -41,7 +56,7 @@
     }
     /*for popup1 on load*/
   </script>
-  <!--LOCAL SCRIPTS-->>
+  <!--LOCAL SCRIPTS-->
   <!--SCRIPTS/PLUGINS-->
   <!-- Facebook Pixel Code -->
   <script>
@@ -67,14 +82,30 @@
   <script>
     fbq('track', 'ViewContent');
   </script>
+  <!--POPUP1-->    
+  <section id="popup1_bg">
+      <div id="popup1_wrapper">
+        <div class="popup1_content" onclick="closePopup()">
+          <h2 class="h2s">¡Súper Promo!</h2>
+          <p class="p1s">Elige las alitas de tu especialidad favorita por tan solo: <span class="bold">L.&nbsp;99.95</span></p>
+          <p class="p1s" style="color:var(--color2-normal); margin:1rem auto;"><span class="bold">¡Promoción por tiempo limitado!</span></p>
+          <p class="p1s" style="font-size: 0.8rem; line-height: 1.3;"><span class="ital">Tomamos las medidas de bioseguridad pertinentes para cuidar de ti, los tuyos y los nuestros.</span></p>
+          <p class="note1" style="letter-spacing: -0.01em;"><span class="bold">#tastyangrywings&nbsp;&nbsp;#quedateencasa</span></p>
+          <div class="buttons-container">
+            <a href="#"><button class="RB1 RB1_small" onclick="closePopup()">Continuar&nbsp;<i class="fas fa-arrow-circle-right"></i></button></a> 
+          </div>
+        </div>
+      </div>
+  </section>
+  <!--POPUP1-->    
   <!--MOBILE MENU2-->
   <nav id="menu2-mobile" style="background: var(--black-normal);">
-    <a href="#" class="menu2-logo"><img src="assets/global/aw-1.svg" title="Logo" alt="Logo" style="margin-right: 0; padding-right: 0;"></a>
+    <a href="#" class="menu2-logo"><img src="assets/global/aw-1.svg" title="Logo Angry Wings" alt="Logo de Angry Wings" style="margin-right: 0; padding-right: 0;"></a>
     <p class="p1s menu2-title">Angry Wings&nbsp;</p>
     <input type="checkbox" id="menu-toggle" hidden>
     <label class="menu2-mobile_label" for="menu-toggle"><i class="fas fa-bars"></i></label>
     <div class="menu2-mobile_container">
-      <img class="menu2-logo2" src="assets/global/aw-1.svg" title="Logo" alt="Logo">
+      <img class="menu2-logo2" src="assets/global/aw-1.svg" title="Logo Angry Wings" alt="Logo de Angry Wings">
       <div class="menu2-mobile_items">
         <p class="p1s">¿Ya te decidiste?</p>
         <a href="https://wa.me/50489302485?text=Deseo%20ordenar%2012%20alitas%20de%20la%20siguiente%20especialidad:" target="_blank" rel="noopener noreferer"><button class=" RB1 RB1_default"><i class="fab fa-whatsapp"></i>&nbsp; Ordena Ahora</button></a> 
@@ -85,7 +116,7 @@
   <!--DESKTOP NAVBAR/ MENU2-->
   <div id="menu2-wrapper"> 
     <nav id="menu2" style="background-color: var(--black-normal);">
-      <a href="#" class="menu2-logo"><img src="assets/global/aw-1.svg" title="Logo" alt="Logo"></a>
+      <a href="#" class="menu2-logo"><img src="assets/global/aw-1.svg" title="Logo Angry Wings" alt="Logo de Angry Wings"></a>
       <p class="p1s menu2-title-desktop">Angry Wings</p>
       <div class="menu2-items">
         <p class="p1s">Sabor Sensacional. ¿Te Atreves a Probar?</p>
@@ -94,22 +125,6 @@
     </nav>
   </div>    
   <!--DESKTOP NAVBAR/ MENU2-->
-  <!--POPUP1-->    
-    <section id="popup1_bg" class="popup1_bg">
-      <div id="popup1_wrapper" class="popup_wrapper">
-        <div class="popup1_content" onclick="closePopup()">
-          <h2 class="h2s">¡Súper Promo!</h2>
-          <p class="p1s">Elige las alitas de tu especialidad favorita por tan solo <span class="bold">L.&nbsp;99.95</span></p>
-          <p class="p1s" style="color:var(--color2-normal); margin:1rem auto;"><span class="bold">¡Promoción por tiempo limitado!</span></p>
-          <p class="p1s" style="font-size: 0.8rem; line-height: 1.3;"><span class="ital">Tomamos las medidas de bioseguridad pertinentes para cuidar de ti, los tuyos y los nuestros.</span></p>
-          <p class="note1" style="letter-spacing: -0.01em;"><span class="bold">#tastyangrywings&nbsp;&nbsp;#quedateencasa</span></p>
-          <div class="buttons-container">
-            <a href="#"><button class="RB1 RB1_small" onclick="closePopup()">Continuar&nbsp;<i class="fas fa-arrow-circle-right"></i></button></a> 
-          </div>
-        </div>
-      </div>
-    </section>
-  <!--POPUP1-->    
   <main role="main" id="main-content">
     <!--1. TS2_HEADER2-->
     <section class="TS2_header2 inner-paddings1 parallax1" id="header">
@@ -131,36 +146,36 @@
     </section>
     <!--1. TS2_HEADER2-->
     <!--2. TS2_FEATURED2-->
-    <section class="TS2_featured2 inner-paddings1" style="background-color: var(--color3-normal);" id="about">
+    <section class="TS2_featured2 inner-paddings1" style="background-color: var(--color3-normal); outline: none;" id="about">
       <div class="TS2_featured2_container">
         <h2 class="h2s TS2_featured2_h2">¡Somos Diferentes!</h2>
-        <p class="p1s TS2_featured2_p1">¿Porque razón amará degustar las alitas de Angry Wings y las demás no?</p>
+        <p class="p1s TS2_featured2_p1">¿Por qué razón amarás degustar las alitas de Angry Wings?</p>
   
         <div class="TS2_featured2_items-wrapper">
   
           <div class="TS2_featured2_items">
             <div class="square-items2">
-              <img class="square-items2_content" src="assets/icon/xl-wings1-r.svg" alt="Alitas XL" title="Alitas Xl">
+              <img class="square-items2_content" src="assets/icon/xl-wings1-r.svg" alt="Icono Alitas XL" title="Alitas Xl">
             </div>            
             <div class="TS2_featured2_item-description">
               <p class="h3s TS2_featured1_item-h3">Tamaño</p>
-              <p class="p1s TS2_featured1_item-p1s">¡Nuestras alitas son más grandes! Para que tú satisfacción sea total y que puedas compartir con tu familia o amigos.</p>
+              <p class="p1s TS2_featured1_item-p1s">¡Nuestras alitas son más grandes! Para que tu satisfacción sea total y puedas compartir con tu familia o amigos.</p>
             </div>
           </div>
   
           <div class="TS2_featured2_items">
             <div class="square-items2">
-              <img class="square-items2_content" src="assets/icon/salt1-r.svg" alt="Alitas XL" title="Alitas Xl">
+              <img class="square-items2_content" src="assets/icon/salt1-r.svg" alt="Icono de un salero" title="Sabor">
             </div>            
             <div class="TS2_featured2_item-description">
               <p class="h3s TS2_featured1_item-h3">Sabor</p>
-              <p class="p1s TS2_featured1_item-p1s">Utilizamos una amplia selección de finas hierbas y condimentos, nacionales y extranjeros para degustar tú paladar.</p>
+              <p class="p1s TS2_featured1_item-p1s">Utilizamos una amplia selección de finas hierbas y condimentos, nacionales y extranjeros para degustar tu paladar.</p>
             </div>
           </div>
   
           <div class="TS2_featured2_items">
             <div class="square-items2">
-              <img class="square-items2_content" src="assets/icon/love1-r.svg" alt="Alitas XL" title="Alitas Xl">
+              <img class="square-items2_content" src="assets/icon/love1-r.svg" alt="Icono de Dedicación" title="Dedicación">
             </div>            
             <div class="TS2_featured2_item-description">
               <p class="h3s TS2_featured1_item-h3">Dedicación</p>
@@ -187,10 +202,12 @@
   
             <ul class="TS2_pro-det1_list1">
               <li class="p1s"><span class="bold">Especialidades:</span></li>
-              <li class="p1s TS2_pro-det1_ls2"><i class="fas fa-chevron-circle-right i-li"></i>&nbsp; 
-                <span class="bold">Superbly Crispy</span><br>
+  
+              <li class="p1s TS2_pro-det1_ls1" style="margin: 1rem 0;">
+                <i class="fas fa-chevron-circle-right i-li"></i>
                 <div>
-                  <p>Crocantes alitas empanizadas en nuestra receta secreta de especias y finas hierbas.</p>
+                  <p class="p1s bold underline">Superbly Crispy</p>
+                  <p class="TS2_pro-det1_ls1-desc">Crocantes alitas empanizadas en nuestra receta secreta de especias y finas hierbas.</p>
                   <div class="note-container">
                     <p class="note1"><i class="fas fa-tag i-warn"></i>&nbsp;Oferta: L.&nbsp;99.95</p>
                     <p class="note-lt"><i class="fas fa-money-bill-alt i-ok"></i>&nbsp;Normal: L.&nbsp;159.95</p>
@@ -198,10 +215,11 @@
                 </div>
               </li>
   
-              <li class="p1s TS2_pro-det1_ls2"><i class="fas fa-chevron-circle-right i-li"></i>&nbsp; 
-                <span class="bold">Wine BBQ</span><br>
+              <li class="p1s TS2_pro-det1_ls1" style="margin: 1rem 0;">
+                <i class="fas fa-chevron-circle-right i-li"></i>
                 <div>
-                  <p>Cremosas alitas en salsa barbacoa preparada con un toque francés.</p>
+                  <p class="p1s bold underline">Wine BBQ</p>
+                  <p class="TS2_pro-det1_ls1-desc">Cremosas alitas en salsa barbacoa preparada con un toque francés.</p>
                   <div class="note-container">
                     <p class="note1"><i class="fas fa-tag i-warn"></i>&nbsp;Oferta: L.&nbsp;99.95</p>
                     <p class="note-lt"><i class="fas fa-money-bill-alt i-ok"></i>&nbsp;Normal: L.&nbsp;139.95</p>
@@ -209,10 +227,11 @@
                 </div>
               </li>
   
-              <li class="p1s TS2_pro-det1_ls2"><i class="fas fa-chevron-circle-right i-li"></i>&nbsp; 
-                <span class="bold">Spicy Hot</span><br>
+              <li class="p1s TS2_pro-det1_ls1" style="margin: 1rem 0;">
+                <i class="fas fa-chevron-circle-right i-li"></i>
                 <div>
-                  <p>Explosión de alitas picantes que no resistirás probar. Chile 100% orgánico, no de envases con preservantes.</p>
+                  <p class="p1s bold underline">Spicy Hot</p>
+                  <p class="TS2_pro-det1_ls1-desc">Explosión de alitas picantes que no resistirás probar. Chile 100% orgánico, no de envases con preservantes.</p>
                   <div class="note-container">
                     <p class="note1"><i class="fas fa-tag i-warn"></i>&nbsp;Oferta: L.&nbsp;99.95</p>
                     <p class="note-lt"><i class="fas fa-money-bill-alt i-ok"></i>&nbsp;Normal: L.&nbsp;139.95</p>
@@ -220,10 +239,11 @@
                 </div>
               </li>
   
-              <li class="p1s TS2_pro-det1_ls2"><i class="fas fa-chevron-circle-right i-li"></i>&nbsp; 
-                <span class="bold">Tropical Hot</span><br>
+              <li class="p1s TS2_pro-det1_ls1" style="margin: 1rem 0;">
+                <i class="fas fa-chevron-circle-right i-li"></i>
                 <div>
-                  <p>Alitas con destellos de rico picantito mezclado con un sabor tropical.</p>
+                  <p class="p1s bold underline">Tropical Hot</p>
+                  <p class="TS2_pro-det1_ls1-desc">Alitas con destellos de rico picantito mezclado con un sabor tropical.</p>
                   <div class="note-container">
                     <p class="note1"><i class="fas fa-tag i-warn"></i>&nbsp;Oferta: L.&nbsp;99.95</p>
                     <p class="note-lt"><i class="fas fa-money-bill-alt i-ok"></i>&nbsp;Normal: L.&nbsp;149.95</p>
@@ -231,10 +251,11 @@
                 </div>
               </li>
   
-              <li class="p1s TS2_pro-det1_ls2"><i class="fas fa-chevron-circle-right i-li"></i>&nbsp; 
-                <span class="bold">Sweet & Sour Sensation </span><br>
+              <li class="p1s TS2_pro-det1_ls1" style="margin: 1rem 0;">
+                <i class="fas fa-chevron-circle-right i-li"></i>
                 <div>
-                  <p>Tonos dulces y agrios bajarán por tu garganta haciéndote sentir una sensación agridulce diferente.</p>
+                  <p class="p1s bold underline">Sweet & Sour Sensation</p>
+                  <p class="TS2_pro-det1_ls1-desc">Tonos dulces y agrios bajarán por tu garganta haciéndote sentir una sensación agridulce diferente.</p>
                   <div class="note-container">
                     <p class="note1"><i class="fas fa-tag i-warn"></i>&nbsp;Oferta: L.&nbsp;99.95</p>
                     <p class="note-lt"><i class="fas fa-money-bill-alt i-ok"></i>&nbsp;Normal L.&nbsp;159.95</p>
@@ -243,11 +264,31 @@
               </li>
             
             </ul>
+  
             <ul class="TS2_pro-det1_list1">
               <li class="p1s"><span class="bold">Todas Acompañadas de:</span></li>
-              <li class="p1s"><i class="fas fa-plus-circle i-li"></i>&nbsp; Papas fritas en palitos</li>
-              <li class="p1s"><i class="fas fa-plus-circle i-li"></i>&nbsp; Bastones de Apio y Zanahoria</li>
-              <li class="p1s"><i class="fas fa-plus-circle i-li"></i>&nbsp; Salsa Ranch, Honey Mustard o Picante.</li>
+  
+              <li class="TS2_pro-det1_ls1">
+                <i class="fas fa-plus-circle i-li"></i>
+                <div>
+                  <p class="p1s">Papas fritas en palitos.</p>
+                </div>
+              </li>
+  
+              <li class="TS2_pro-det1_ls1">
+                <i class="fas fa-plus-circle i-li"></i>
+                <div>
+                  <p class="p1s">Bastones de Apio y Zanahoria.</p>
+                </div>
+              </li>
+  
+              <li class="TS2_pro-det1_ls1">
+                <i class="fas fa-plus-circle i-li"></i>
+                <div>
+                  <p class="p1s">Salsa Ranch, Honey Mustard o Picante.</p>
+                </div>
+              </li>
+  
             </ul>
             <div class="TS2_pro-det1_buttons-container buttons-container">
               <a href="https://wa.me/50489302485?text=Deseo%20ordenar%2012%20alitas%20de%20la%20siguiente%20especialidad:" target="_blank" rel="noopener noreferer"><button class=" RB1 RB1_default margin-L0"><i class="fab fa-whatsapp"></i>&nbsp; Ordena Ahora</button></a>
@@ -277,7 +318,7 @@
               <picture>
                 <source type="image/webp" srcset="assets/product/extras/papitas1.webp">
                 <source type="image/jpeg" srcset="assets/product/extras/papitas1.jpg">
-                <img class="square-items1_content" src="assets/product/extras/papitas1.jpg" alt="Papas fritas" title="Papas fritas">
+                <img class="square-items1_content" src="assets/product/extras/papitas1.jpg" alt="Papas Fritas" title="Papas fritas">
               </picture>
             </div>            
             <div class="TS2_featured1_item-description">
@@ -292,7 +333,7 @@
               <picture>
                 <source type="image/webp" srcset="assets/product/extras/papas-wedge1.webp">
                 <source type="image/jpeg" srcset="assets/product/extras/papas-wedge1.jpg">
-                <img class="square-items1_content" src="assets/product/extras/papas-wedge1.jpg" alt="Optional Text" title="Optional Title">
+                <img class="square-items1_content" src="assets/product/extras/papas-wedge1.jpg" alt="Papas Deluxe" title="Papas Deluxe">
               </picture>
             </div>            
             <div class="TS2_featured1_item-description">
@@ -307,7 +348,7 @@
               <picture>
                 <source type="image/webp" srcset="assets/product/extras/o-rings1.webp">
                 <source type="image/jpeg" srcset="assets/product/extras/o-rings1.jpg">
-                <img class="square-items1_content" src="assets/product/extras/o-rings1.jpg" alt="Optional Text" title="Optional Title">
+                <img class="square-items1_content" src="assets/product/extras/o-rings1.jpg" alt="Aros de Cebolla" title="Aros de Cebolla">
               </picture>
             </div>            
             <div class="TS2_featured1_item-description">
@@ -322,7 +363,7 @@
               <picture>
                 <source type="image/webp" srcset="assets/product/extras/veggie-sticks1.webp">
                 <source type="image/jpeg" srcset="assets/product/extras/veggie-sticks1.jpg">
-                <img class="square-items1_content" src="assets/product/extras/veggie-sticks1.jpg" alt="Optional Text" title="Optional Title">
+                <img class="square-items1_content" src="assets/product/extras/veggie-sticks1.jpg" alt="Veggie Sticks" title="Veggie Sticks">
               </picture>
             </div>            
             <div class="TS2_featured1_item-description">
@@ -345,9 +386,9 @@
     <!--7.TS2_QUOTE1-->
     <section class="TS2_quote1 inner-paddings1" style="background: var(--black-normal)">
       <h2 class="h2s TS2_quote1_h2s">¿Que esperas? <br>!Ordena Ya!</h2>
-      <p class="p1s TS2_quote1_p1s">Un miembro de nuestro equipo atenderá tu orden de inmediato.</p>
+      <p class="p1s TS2_quote1_p1s">Un miembro de nuestro equipo atenderá tu orden de inmediato. Llevamos todo el sabor de Angry Wings hasta la puerta de tu casa.</p>
       <div class="note-container">
-        <p1  style="margin:auto; color:var(--white-normal);" class="note1"><i class="fas fa-truck i-warn"></i>&nbsp;El servicio de delivery a domicilio tiene un costo de L.&nbsp;40.00</p1>
+        <p1  style="margin:auto; color:var(--white-normal);" class="note1"><i class="fas fa-truck i-warn"></i>&nbsp;Valor por envío: L.&nbsp;40.00</p1>
       </div>
       <div class="buttons-container">
         <a href="https://wa.me/50489302485?text=Deseo%20ordenar%2012%20alitas%20de%20la%20siguiente%20especialidad:" target="_blank" rel="noopener noreferer"><button class=" RB1 RB1_default"><i class="fab fa-whatsapp"></i>&nbsp; Ordena Ahora</button></a>
@@ -359,7 +400,7 @@
   <footer class="footer2 inner-paddings1" style="background-color: var(--black-normal);">
     <div class="footer2-container">
       <div class="footer2-wrappers" id="footer_info">
-        <a href="#" title="Your Company | Visit Home"><img src="assets/global/aw-1.svg" alt="Your Company Logo"></a>
+        <a href="#" title="Angry Wings| Pagina Principal"><img src="assets/global/aw-1.svg" alt="Logo de Angry Wings"></a>
         <p class="p1s">Sabor Sensacional.</p>
         <p class="p2s">© 2020 Angry Wings<br>Todos los Derechos Reservados.</p>
       </div>
@@ -368,5 +409,5 @@
   </footer>
   <!--FOOTER 2-->
   <a href="#" class="scroll-top1" title="Volver al Inicio de la Pagina" style="display: none;"> <i class="fas fa-chevron-up"></i></a>
-</body>
+  </body>
 </html>

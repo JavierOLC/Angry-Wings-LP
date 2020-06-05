@@ -1,12 +1,12 @@
-/*!LAST UPDATED: May 21, 2019*/
+/*!LAST UPDATED: June 5, 2019*/
 /*!==== INDEX ====
     0. LIGHTBOX1 (Updated: May 18, 2020)
-    1. TS2_HEADER2 (Updated: May 20, 2020) [based on TS2_HEADER1]
-    2. TS2_FEATURED2 (Updated: may 12, 2020) [Based on TS2_FEATURED1]
-    4. TS2_PRO-DET1 (Updated: May 21, 2020)
+    1. TS2_HEADER2 (Updated: June 5, 2020) [based on TS2_HEADER1]
+    2. TS2_FEATURED2 (Updated: June 5, 2020) [Based on TS2_FEATURED1]
+    4. TS2_PRO-DET1 (Updated: June 5, 2020)
     5. TS2_FEATURED1 (Updated: May 20, 2020)
     7. TS2_QUOTE1 (Updated: May 21, 2020)
-    MEDIA QUERIES (Updated: May 18, 2020)
+    MEDIA QUERIES (Updated: June 5, 2020)
 
 ==== INDEX ====*/
 
@@ -25,7 +25,7 @@
 /*DETAILS*/
 
 /*DETAILS*/
-.popup1_bg{
+#popup1_bg{
   background: hsla(var(--black), 0%, 0%, 0.9);
   width:100%;
   height:100vh;
@@ -41,7 +41,7 @@
   z-index:9900;
 }
 
-.popup1_wrapper{
+#popup1_wrapper{
   display:none;
   position:fixed;
 
@@ -84,20 +84,6 @@
   margin: 0.5rem 2rem 0.5rem 0;
 } */
 /*TEXT STYLES*/
-
-/*BACKGROUND IMG*/
-.no-webp .TS2_header2 {
-  background-image: url(../../assets/page/index/header-alitas2.jpg);
-}
-
-.webp .TS2_header2{
-  background-image: url(../../assets/page/index/header-alitas2.webp);
-}
-
-.no-js .TS2_header2 {
-  background-image: url(../../assets/page/index/header-alitas2.jpg);
-}
-/*BACKGROUND IMG*/
 .TS2_header2 {
   width: 100%;
   min-height: 100vh;
@@ -167,6 +153,11 @@
 
 /*!==== 2. TS2_FEATURED2 ====*/
 /*some styles cab be found in the TS2_FEATURED1 section below.*/
+.TS2_featured2_item-description > .TS2_featured1_item-h3,
+.TS2_featured2_item-description > .TS2_featured1_item-p1s{
+  user-select:text;
+}
+
 .TS2_featured2_container{
   margin-bottom: 0 !important; 
 }
@@ -250,9 +241,6 @@
 }
 .TS2_pro-det1_list1 > .p1s > .bold{
   color: var(--color3-normal);
-}
-.TS2_pro-det1_list1 > .p1s > .i-li{
-  color: var(--color1-normal);
 }
 
 .TS2_pro-det1_note-container> .note1,
@@ -347,54 +335,6 @@
 }
 /*pro-det_alitas1*/
 
-/*pro-det_burger1*/
-.no-webp #pro-det_burger1 {
-  background-image: url(../../assets/product/burger/burger2.jpg);
-}
-
-.webp #pro-det_burger1 {
-  background-image: url(../../assets/product/burger/burger2.webp);
-}
-
-.no-js #pro-det_burger1 {
-  background-image: url(../../assets/product/burger/burger2.jpg);
-}
-/*pro-det_burger1*/
-
-/*pro-det_sandwich1*/
-.no-webp #pro-det_sandwich1{
-  background-image: url(../../assets/product/sandwich/sandwich2.jpg);
-  background-position: left;
-}
-
-.webp  #pro-det_sandwich1{
-  background-image: url(../../assets/product/sandwich/sandwich2.webp);
-  background-position: left;
-}
-
-.no-js  #pro-det_sandwich1{
-  background-image: url(../../assets/product/sandwich/sandwich2.jpg);
-  background-position: left;
-}
-/*pro-det_sandwich1*/
-
-/*#pro-det_salad1*/
-.no-webp #pro-det_salad1{
-  background-image: url(../../assets/product/salad/salad2-l.jpg);
-  background-position: left;
-}
-
-.webp  #pro-det_salad1{
-  background-image: url(../../assets/product/salad/salad2-l.webp);
-  background-position: left;
-}
-
-.no-js  #pro-det_salad1{
-  background-image: url(../../assets/product/salad/salad2-l.jpg);
-  background-position: left;
-}
-/*#pro-det_salad1*/
-
 .TS2_pro-det1_media-wrapper{
 width: 100%;
 }/*Media wrapper, images or vidos go here*/
@@ -413,39 +353,51 @@ width: 100%;
   align-items: flex-start;
   justify-content: center;
 }
-/*List Style 2*/
-.TS2_pro-det1_ls2 {
-  margin: 1rem 0;
-  width: 100%;
-}
-.TS2_pro-det1_ls2 > div{
-  padding-left: 1.8rem;
-  font-size: 0.85rem;
-  line-height: 1.7;
-  display: flex;
-  flex-flow: column nowrap;
-  align-items: flex-start;
-  justify-content: center;
-}
 
-.TS2_pro-det1_ls2 > span{
-  color:var(--white-normal)!important;
-  text-decoration: underline;
+/*List Style 1*/
+
+/*Text styles*/
+.TS2_pro-det1_ls1 > div .p1s{
+  margin:0;
+  color: var(--white-normal);
+  text-align: left;
+}
+.TS2_pro-det1_ls1 > div .underline{
   text-decoration-color: var(--color1-normal);
 }
-.TS2_pro-det1_ls2 > div > .note-container {
-  width:100%;
-  margin-top: 0.5rem;
+.TS2_pro-det1_ls1-desc{
+  color: var(--white-normal);
+  font-size: 0.85rem;
+  line-height: 1.7;
 }
-
-.TS2_pro-det1_ls2 > div > .note-container > p{
+.TS2_pro-det1_ls1 > i{
+  color: var(--color1-normal);
+  margin: 0.3em 0.55em auto 0;
+}
+.TS2_pro-det1_ls1 > div > .note-container p{
   color: var(--white-normal);
   font-size: 0.7rem;
   text-align: left;
   margin-right: auto;
 }
-/*List Style 2*/
+/*Text styles*/
 
+.TS2_pro-det1_ls1,
+.TS2_pro-det1_ls2{
+  margin: 0.5rem 0;
+  width: 100%;
+  
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.TS2_pro-det1_ls1 > div > .note-container {
+  width:100%;
+  margin-top: 0.5rem;
+}
+/*List Style 1*/
 /*INFO*/
 
 /*DETAILS*/
@@ -458,22 +410,6 @@ width: 100%;
   justify-content: flex-start;
   margin: 0.5rem 0 0 0;
 }
-/*CUSTOM SETTINGS FOR SCROLL BUTTON 2*/
-.TS2_pro-det1 > .sdb2-wrapper{
-  position: absolute;
-  bottom:0;
-  z-index: 202;
-}
-.TS2_pro-det1 > .sdb2-wrapper > a{
-  margin: 2rem 0 0 0;
-}
-
-.TS2_pro-det1 > .sdb2-wrapper > a > span{
-  border-left: 2px solid var(--white-normal);
-  border-bottom: 2px solid var(--white-normal);
-}
-
-/*CUSTOM SETTINGS FOR SCROLL BUTTON 2*/
 /*!==== 4. TS2_PRO-DET1 ====*/
 
 /*!==== 5. TS2_FEATURED1 ====*/
@@ -984,6 +920,10 @@ width: 100%;
   /*1. TS2_HEADER2*/
 
  /*2. TS2_FEATURED2*/
+ .TS2_featured2_h2,
+ .TS2_featured2_p1{
+  width: 100%;
+ }
  .TS2_featured2_items-wrapper{
   grid-template-columns:1fr;
   width:80%;
@@ -997,7 +937,7 @@ width: 100%;
 
   /*4. TS2_PRO-DET1*/
   .TS2_pro-det1_container1 {
-    padding: 1rem 2.5rem;
+    padding: 1rem 2rem;
   }
 
   .TS2_pro-det1_info{
