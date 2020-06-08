@@ -1,9 +1,9 @@
-/*!LAST UPDATED: June 5, 2019*/
+/*!LAST UPDATED: June 8, 2019*/
 /*!==== INDEX ====
     0. LIGHTBOX1 (Updated: May 18, 2020)
     1. TS2_HEADER2 (Updated: June 5, 2020) [based on TS2_HEADER1]
-    2. TS2_FEATURED2 (Updated: June 5, 2020) [Based on TS2_FEATURED1]
-    4. TS2_PRO-DET1 (Updated: June 5, 2020)
+    2. TS2_FEATURED2 (Updated: June 8, 2020) [Based on TS2_FEATURED1]
+    4. TS2_PRO-DET1 (Updated: June 8, 2020)
     5. TS2_FEATURED1 (Updated: May 20, 2020)
     7. TS2_QUOTE1 (Updated: May 21, 2020)
     MEDIA QUERIES (Updated: June 5, 2020)
@@ -194,7 +194,7 @@
 /*EMBEDDED FROM SQUARE-ITEMS 1*/
 .square-items2 {
   background-color: var(--white-normal);
-  width: 70%;
+  width: 60%;
   border-radius: 100%;
   box-shadow: 5px 5px 10px hsla(var(--black), 0%, 0%, 0.2);
   position: relative;
@@ -235,12 +235,17 @@
   margin: 0.5rem 0 2rem 0;
 }
 
-.TS2_pro-det1_list1 > .p1s{
+.TS2_pro-det1_l1 > .p1s{
   color: var(--white-normal);
   text-align:left;
 }
-.TS2_pro-det1_list1 > .p1s > .bold{
+.TS2_pro-det1_l1 > .p1s > .bold{
   color: var(--color3-normal);
+}
+.list-title1{
+  color: var(--color3-normal);
+  text-align: left;
+  margin:0;
 }
 
 .TS2_pro-det1_note-container> .note1,
@@ -344,60 +349,84 @@ width: 100%;
   width: 80%;
   margin: 4rem auto 6rem auto;
 }
-.TS2_pro-det1_list1{
+
+/*LIST STYLES*/
+/*
+TS2_pro-det1_l1: <ul>,<ol> wrapper
+TS2_pro-det1_dl1: <dl> wrapper
+TS2_pro-det1_lis1: <ul>,<ol> List Item Styles
+TS2_pro-det1_dlis1: <dl> List Item Styles
+*/
+
+.TS2_pro-det1_l1,
+.TS2_pro-det1_dl1{
   list-style: none;
-  margin: 1rem 0 2rem 0;
+  margin: 1 0 2rem 0;
 
   display: flex;
   flex-flow: column nowrap;
   align-items: flex-start;
   justify-content: center;
-}
+}/*List containers*/
 
-/*List Style 1*/
+.TS2_pro-det1_dl1{
+  margin: 0 0 2rem 0;
+}/*<dl> wrapper*/
 
-/*Text styles*/
-.TS2_pro-det1_ls1 > div .p1s{
-  margin:0;
-  color: var(--white-normal);
-  text-align: left;
-}
-.TS2_pro-det1_ls1 > div .underline{
-  text-decoration-color: var(--color1-normal);
-}
-.TS2_pro-det1_ls1-desc{
-  color: var(--white-normal);
-  font-size: 0.85rem;
-  line-height: 1.7;
-}
-.TS2_pro-det1_ls1 > i{
-  color: var(--color1-normal);
-  margin: 0.3em 0.55em auto 0;
-}
-.TS2_pro-det1_ls1 > div > .note-container p{
-  color: var(--white-normal);
-  font-size: 0.7rem;
-  text-align: left;
-  margin-right: auto;
-}
-/*Text styles*/
-
-.TS2_pro-det1_ls1,
-.TS2_pro-det1_ls2{
-  margin: 0.5rem 0;
+.TS2_pro-det1_lis1,
+.TS2_pro-det1_dlis1{
   width: 100%;
+  margin: 0.5rem 0;
   
   display: flex;
   flex-flow: row nowrap;
   justify-content: flex-start;
   align-items: center;
-}
+}/*<ol>, <ul>, <dl> List Items*/
 
-.TS2_pro-det1_ls1 > div > .note-container {
+.TS2_pro-det1_dlis1{
+  margin: 1rem 0;
+}/*<dl> List Items*/
+
+.TS2_pro-det1_lis1 > div > .note-container,
+.TS2_pro-det1_dlis1 > div > .note-container{  
   width:100%;
   margin-top: 0.5rem;
 }
-/*List Style 1*/
+
+/*Text styles*/
+.TS2_pro-det1_lis1 > i,
+.TS2_pro-det1_dlis1 > i{
+  color: var(--color1-normal);
+  margin: 0.3em 0.55em auto 0;
+}
+
+.TS2_pro-det1_lis1 > div .p1s,
+.TS2_pro-det1_dlis1 > div .p1s{
+  margin:0;
+  color: var(--white-normal);
+  text-align: left;
+}
+.TS2_pro-det1_lis1 > div .underline,
+.TS2_pro-det1_dlis1 > div .underline{
+  text-decoration-color: var(--color1-normal);
+}
+
+.TS2_pro-det1_dlis1-desc{
+  color: var(--white-normal);
+  font-size: 0.85rem;
+  line-height: 1.7;
+  text-align: left;
+}/*for <dd> */
+
+.TS2_pro-det1_lis1 > div > .note-container p,
+.TS2_pro-det1_dlis1 > div > .note-container p{
+  color: var(--white-normal);
+  font-size: 0.7rem;
+  text-align: left;
+  margin-right: auto;
+}
+/*LIST STYLES*/
 /*INFO*/
 
 /*DETAILS*/
@@ -648,6 +677,11 @@ width: 100%;
 }
 
 @media screen and (max-width:1440px){
+    /*1. TS2_HEADER2*/
+    .TS2_header2-info{
+      width: 60%;
+    }
+    /*1. TS2_HEADER2*/
   /*2. TS2_FEATURED2*/
   .TS2_featured2_items-wrapper{
     width:75%;
@@ -673,12 +707,6 @@ width: 100%;
 }
 
 @media screen and (max-width:1280px){
-  /*1. TS2_HEADER2*/
-  .TS2_header2-info{
-    width: 55%;
-  }
-  /*1. TS2_HEADER2*/
-
   /*4. TS2_PRO-DET1*/
   .TS2_pro-det1_info{
     width: 85%;

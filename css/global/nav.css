@@ -1,9 +1,9 @@
-    /*!LAST UPDATED: may 16, 2019*/
+    /*!LAST UPDATED: june 7, 2019*/
   /*!==== INDEX ====
   
-      1. MENU 2 (Updated: May 16, 2020)
+      1. MENU 2 (Updated: June 7, 2020)
       2. FOOTER 2 (Updated: May 16, 2020)
-      MEDIA QUERIES (Updated: May 16, 2020)
+      MEDIA QUERIES (Updated: june 7, 2020)
   
   ==== INDEX ====*/
   
@@ -31,7 +31,7 @@ PLACE THIS IN YOUR SCRIPTS SO IT AUTO HIDES WHEN SCROLLING DOWN*/
     user-select:none;
   }
   
-/*.menu2-items a,*/ .menu2-mobile_items a {
+/*.menu2-items > li a,*/ .menu2-mobile_items li > a {
     padding:1.1em;
     font-family: "Open Sans", arial, sans-serif;
     font-size: 1.2rem;
@@ -45,11 +45,11 @@ PLACE THIS IN YOUR SCRIPTS SO IT AUTO HIDES WHEN SCROLLING DOWN*/
     user-select:none;
 }
 
-  .menu2-items a:hover {
+  .menu2-items li > a:hover {
     color: var(--color2-normal);
   }
   
-  .menu2-items a:focus {
+  .menu2-items li > a:focus {
     -webkit-transform: scale(0.9);
     transform: scale(0.9);
     color: var(--color2-normal);
@@ -59,7 +59,7 @@ PLACE THIS IN YOUR SCRIPTS SO IT AUTO HIDES WHEN SCROLLING DOWN*/
     color: var(--white-normal);
   }/*changes social media buttons color scheme*/
 
-  .menu2-items > p{
+  .menu2-items .p1s{
     color: var(--white-normal);
     font-size: 0.8rem;
   }/* optional message on the navbar*/
@@ -143,10 +143,11 @@ PLACE THIS IN YOUR SCRIPTS SO IT AUTO HIDES WHEN SCROLLING DOWN*/
     align-items: center;
     justify-content: flex-end;
     align-content: space-around;
+    list-style:none;
   }
 
 /*DETAILS*/
-.menu2-items > a >.RB1_small{
+.menu2-items > li > a > .RB1_small{
   padding: 0.3rem 0.6rem;
 }
 /*DETAILS*/
@@ -337,7 +338,7 @@ PLACE THIS IN YOUR SCRIPTS SO IT AUTO HIDES WHEN SCROLLING DOWN*/
         height: 70px;
       }
     
-      #menu2-items a{
+      #menu2-items >li a{
       padding:0.8em;
       }
     /*1.1 DESKTOP MENU 2*/
@@ -455,22 +456,28 @@ PLACE THIS IN YOUR SCRIPTS SO IT AUTO HIDES WHEN SCROLLING DOWN*/
       flex-flow: column nowrap;
       align-items: center;
       justify-content: center;
+      list-style: none;
     }
-    .menu2-mobile_items a{
+
+    .menu2-mobile_items li {
+      color: var(--black-normal);
+      margin: 0.75rem auto;
+    }
+    .menu2-mobile_items li > a{
       color: var(--color2-normal);
       font-size:1.953rem;
-      padding:0.75em;
+      padding:0.75rem;
     }
-    .menu2-mobile_items a:hover {
+    .menu2-mobile_items li > a:hover {
       color: var(--black-normal);
     }
   
-    .menu2-mobile_items a:focus {
+    .menu2-mobile_items li > a:focus {
       transform: scale(0.9);
       color: var(--black-normal);
     }
     /* DETAILS*/
-    .menu2-mobile_items > a > button{
+    .menu2-mobile_items li > a > button{
       font-size:1rem;
       margin:0;
     }/* makes buttons bigger*/
@@ -553,7 +560,7 @@ PLACE THIS IN YOUR SCRIPTS SO IT AUTO HIDES WHEN SCROLLING DOWN*/
 
 @media screen and (max-height: 750px) {
     /*1.2 MOBILE MENU 2 */
-    .menu2-mobile_items a {
+    .menu2-mobile_items li > a {
       font-size: 1.563rem;
     }
     /*1.2 MOBILE MENU 2 */
