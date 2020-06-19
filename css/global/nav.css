@@ -1,9 +1,9 @@
-    /*!LAST UPDATED: june 7, 2019*/
+    /*!LAST UPDATED: june 18, 2019*/
   /*!==== INDEX ====
   
       1. MENU 2 (Updated: June 7, 2020)
-      2. FOOTER 2 (Updated: May 16, 2020)
-      MEDIA QUERIES (Updated: june 7, 2020)
+      2. FOOTER 2 (Updated: June 18, 2020)
+      MEDIA QUERIES (Updated: june 18, 2020)
   
   ==== INDEX ====*/
   
@@ -171,14 +171,18 @@ PLACE THIS IN YOUR SCRIPTS SO IT AUTO HIDES WHEN SCROLLING DOWN*/
 .footer2-titles{
     color:var(--color3-normal);
     user-select: none;
-    margin-bottom: 0.6em;
+    margin-bottom: 0.4em;
   }
-  .footer2-links{
+  .footer2-links,
+  .footer2-p1s{
     color:var(--white-normal);
-    font-size: 1rem;
+    font-size: 0.8rem;
     text-decoration: none;
     text-align: left;
     transition: var(--a250ms);
+  }
+  .footer2-links{
+    text-decoration: underline;
   }
   .footer2-links:hover{
     color:var(--color3-normal);    
@@ -208,19 +212,19 @@ PLACE THIS IN YOUR SCRIPTS SO IT AUTO HIDES WHEN SCROLLING DOWN*/
   }
    
   .footer2-container{
-    width:auto;
-    margin: 4rem auto 2rem auto;
+    width:70%;
+    margin: 2rem auto;
   
     display: grid;
-    grid-template-columns: repeat(1,1fr);
+    grid-template-columns: repeat(3,1fr);
     gap:2rem;
     grid-template-areas:
-    "fi";
+    "fa fc fi";
   }/*main container, footer items go here*/
   
   .footer2-wrappers{
-    width:100%;
-    margin: 2rem 0 auto 0;
+    width:80%;
+    margin: 2rem auto auto auto;
     display: flex;
     flex-flow: column nowrap;
     align-items: flex-start;
@@ -228,62 +232,45 @@ PLACE THIS IN YOUR SCRIPTS SO IT AUTO HIDES WHEN SCROLLING DOWN*/
   }/*footer links go here*/
   
   /*FOOTER WRAPPERS*/
-  #footer_about{
+  #footer_fa{
     grid-area: fa;
   }/*about*/
-  
-  #footer_info{
-    grid-area: fi;
-  }/*info*/
-  
-  #footer_nav{
-    grid-area: fn;
-  }/*links to other pages*/
-  
-  #footer_links{
-    grid-area: fl;
-  }/*social media buttons*/
-  
+
+  #footer_fc{
+    grid-area: fc;
+  } /*contact*/
+
   /*FOOTER WRAPPERS*/
   
   /*INFO*/
-  #footer_info{
-    margin: 0 auto auto auto;
+  #footer_fi{
+    width:100%;
+    margin: auto;
     display: flex;
     flex-flow: column nowrap;
     align-items: center;
     justify-content: space-around;
+    grid-area: fi;
   }
   
-  #footer_info> .p1s{
+  #footer_fi> .p1s{
     color:var(--white-normal);
     font-weight: bold;
     /*margin: 0.5em 0 1em 0;*/
     user-select: none;
   }/*Slogan*/
 
-  #footer_info> .p2s{
+  #footer_fi> .p2s{
     color:#BBB;
     user-select: none;
   }/*copyright*/
   
-  #footer_info a{
+  #footer_fi a{
     width:50%;
     display: block;
     text-decoration: none;
   }/*logo*/
-  #footer_about> .p1s{
-    font-size: 0.9rem;
-  }
-  #footer_about> .p1s:hover{
-    color: var(--color3-normal);
-  }
-  #footer_about> .inactive:hover{
-    color: var(--white-normal);
-    text-decoration: none;
-  }
-  /*INFO*/
-  
+
 /* DETAILS*/
 
 /*LAST UPDATED: November 26, 2019*/
@@ -324,13 +311,13 @@ PLACE THIS IN YOUR SCRIPTS SO IT AUTO HIDES WHEN SCROLLING DOWN*/
 /*!==== 2. FOOTER 2 ====*/
   
 /*!==== MEDIA QUERIES====*/
-/*@media screen and (min-width: 2000px){
-    /*2. FOOTER 2
+@media screen and (min-width: 2000px){
+    /*2. FOOTER 2*/
     .footer2-container{
-        width:60%;
+        width:50%;
       }
-    /*2. FOOTER 2
-  }*/
+    /*2. FOOTER 2*/
+  }
 
 @media screen and (max-width:1440px){
       /*1.1 DESKTOP MENU 2*/
@@ -348,12 +335,21 @@ PLACE THIS IN YOUR SCRIPTS SO IT AUTO HIDES WHEN SCROLLING DOWN*/
 
 }/*Small Laptops*/
   
-/*@media screen and (max-width:1280px){
-    /*2. FOOTER 2 
+@media screen and (max-width:1280px){
+    /*2. FOOTER 2 */
     .footer2-container{
-        width:100%;
+        width:80%;
       }
-    /*2. FOOTER 2
+    /*2. FOOTER 2*/
+
+}/*Small Laptops*/
+
+@media screen and (max-width:1024px){
+  /*2. FOOTER 2 */
+  .footer2-wrappers{
+      width:100%;
+    }
+  /*2. FOOTER 2*/
 
 }/*Small Laptops*/
 
@@ -526,10 +522,11 @@ PLACE THIS IN YOUR SCRIPTS SO IT AUTO HIDES WHEN SCROLLING DOWN*/
     .footer2-container{
         width:80%;
         margin: 0rem auto 4rem auto;
-        /*grid-template-columns: repeat(2,1fr);
+        grid-row-gap:5rem;
+        grid-template-columns: repeat(2,1fr);
         grid-template-areas: 
-        "fn fl" 
-        "fa fi";*/
+        "fa fc" 
+        "fi fi";
       }
       .footer2-wrappers{
         align-items: center;
@@ -538,20 +535,22 @@ PLACE THIS IN YOUR SCRIPTS SO IT AUTO HIDES WHEN SCROLLING DOWN*/
       .footer2-titles{
         font-size: 2rem;
       }
-      .footer2-links{
+      .footer2-links,
+      .footer2-p1s{
         text-align: center;
-        font-size: 1.5rem;
+        font-size: 1rem;
       }
+
       .footer2-wrappers> .social-links1{
         justify-content: center;
       }
       #footer_links{
         margin: 0 0 auto 0;
       }
-      #footer_info a{
+      #footer_fi a{
         width:30%;
       }
-      #footer_about> .p1s {
+      #footer_fa> .p1s {
         font-size: 1rem;
       }
     /*2. FOOTER 2 */
@@ -576,20 +575,19 @@ PLACE THIS IN YOUR SCRIPTS SO IT AUTO HIDES WHEN SCROLLING DOWN*/
     .footer2-container{
         width:85%;
         margin: 0rem auto 4rem auto;
-        /* grid-template-columns: repeat(1,1fr);
+        grid-template-columns: repeat(1,1fr);
         grid-template-areas: 
-        "fn"
-        "fl" 
         "fa"
+        "fc" 
         "fi";
-        gap:3.5rem;*/
+        grid-row-gap:5rem;
         justify-items: center;
       }
       .footer2-titles{
         font-size: 2rem;
       }
     
-      #footer_info a{
+      #footer_fi a{
         width:40%;
       }
     /*2. FOOTER 2 */
