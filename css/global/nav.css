@@ -1,9 +1,9 @@
-    /*!LAST UPDATED: june 18, 2019*/
+    /*!LAST UPDATED: July 24, 2020*/
   /*!==== INDEX ====
   
       1. MENU 2 (Updated: June 7, 2020)
-      2. FOOTER 2 (Updated: June 18, 2020)
-      MEDIA QUERIES (Updated: june 18, 2020)
+      2. FOOTER 2 (Updated: July 24, 2020)
+      MEDIA QUERIES (Updated: July 24 2020)
   
   ==== INDEX ====*/
   
@@ -212,14 +212,14 @@ PLACE THIS IN YOUR SCRIPTS SO IT AUTO HIDES WHEN SCROLLING DOWN*/
   }
    
   .footer2-container{
-    width:70%;
+    width:80%;
     margin: 2rem auto;
   
     display: grid;
-    grid-template-columns: repeat(3,1fr);
+    grid-template-columns: repeat(4,1fr);
     gap:2rem;
     grid-template-areas:
-    "fa fc fi";
+    "fi fa foh fc";
   }/*main container, footer items go here*/
   
   .footer2-wrappers{
@@ -239,6 +239,10 @@ PLACE THIS IN YOUR SCRIPTS SO IT AUTO HIDES WHEN SCROLLING DOWN*/
   #footer_fc{
     grid-area: fc;
   } /*contact*/
+  
+  #footer_foh{
+    grid-area: foh;
+  } /*Opening Hours*/
 
   /*FOOTER WRAPPERS*/
   
@@ -338,7 +342,7 @@ PLACE THIS IN YOUR SCRIPTS SO IT AUTO HIDES WHEN SCROLLING DOWN*/
 @media screen and (max-width:1280px){
     /*2. FOOTER 2 */
     .footer2-container{
-        width:80%;
+        width:85%;
       }
     /*2. FOOTER 2*/
 
@@ -525,8 +529,8 @@ PLACE THIS IN YOUR SCRIPTS SO IT AUTO HIDES WHEN SCROLLING DOWN*/
         grid-row-gap:5rem;
         grid-template-columns: repeat(2,1fr);
         grid-template-areas: 
-        "fa fc" 
-        "fi fi";
+        "fa foh" 
+        "fc fi";
       }
       .footer2-wrappers{
         align-items: center;
@@ -553,6 +557,9 @@ PLACE THIS IN YOUR SCRIPTS SO IT AUTO HIDES WHEN SCROLLING DOWN*/
       #footer_fa> .p1s {
         font-size: 1rem;
       }
+      #footer_foh, #footer_fc{
+        justify-content: flex-start;
+      }
     /*2. FOOTER 2 */
   
 }/*Tablets*/
@@ -578,6 +585,7 @@ PLACE THIS IN YOUR SCRIPTS SO IT AUTO HIDES WHEN SCROLLING DOWN*/
         grid-template-columns: repeat(1,1fr);
         grid-template-areas: 
         "fa"
+        "foh"
         "fc" 
         "fi";
         grid-row-gap:5rem;

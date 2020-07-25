@@ -1,12 +1,12 @@
-/*!LAST UPDATED: June 18, 2019*/
+/*!LAST UPDATED: July 25, 2020*/
 /*!==== INDEX ====
-    0. LIGHTBOX1 (Updated: May 18, 2020)
+    0. LIGHTBOX1 (Updated: July 25, 2020)
     1. TS2_HEADER2 (Updated: June 5, 2020) [based on TS2_HEADER1]
     2. TS2_FEATURED2 (Updated: June 18, 2020) [Based on TS2_FEATURED1]
-    4. TS2_PRO-DET1 (Updated: June 15, 2020)
-    5. TS2_FEATURED1 (Updated: May 20, 2020)
+    4. TS2_PRO-DET1 (Updated: July 24, 2020)
+    5. TS2_FEATURED1 (Updated: July 24, 2020)
     7. TS2_QUOTE1 (Updated: May 21, 2020)
-    MEDIA QUERIES (Updated: June 18, 2020)
+    MEDIA QUERIES (Updated: July 24, 2020)
 
 ==== INDEX ====*/
 
@@ -23,7 +23,20 @@
 /*TEXT STYLES*/
 
 /*DETAILS*/
+.popup1_i1{ 
+  width:100%;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: center;
+  margin:2.5rem auto 1rem auto;
+}
 
+.popup1_i1 i{ 
+  margin:0 0.5rem;
+  font-size: 2.5rem;
+  color: var(--black-normal);
+}
 /*DETAILS*/
 #popup1_bg{
   background: hsla(var(--black), 0%, 0%, 0.9);
@@ -424,7 +437,7 @@ TS2_pro-det1_lis2: <ul>,<ol> List Item Styles 2
   color: var(--white-normal);
   font-size: 0.7rem;
   text-align: left;
-  margin-right: auto;
+  width:100%;
 }
 /*LIST STYLES*/
 /*INFO*/
@@ -434,7 +447,7 @@ TS2_pro-det1_lis2: <ul>,<ol> List Item Styles 2
   width: 100%;
   height: auto;
   display: flex;
-  flex-flow: row wrap;
+  flex-flow: column wrap;
   align-items: flex-start;
   justify-content: flex-start;
   margin: 0.5rem 0 0 0;
@@ -512,7 +525,7 @@ TS2_pro-det1_lis2: <ul>,<ol> List Item Styles 2
 }
 
 .TS2_featured1_items-wrapper{
-  width: 70%;
+  width: 75%;
   margin: 3rem 0 1rem 0;
 
   display: flex;
@@ -700,6 +713,12 @@ TS2_pro-det1_lis2: <ul>,<ol> List Item Styles 2
   .TS2_featured1_items-wrapper{
     width:80%;
   }
+  .TS2_featured1_items{
+    width:325px;
+  }
+  .TS2_featured1_item-description {
+    padding: 1.5rem;
+  }
   /*5. TS2_FEATURED1*/
 
   /*7. TS2_QUOTE1*/
@@ -744,6 +763,9 @@ TS2_pro-det1_lis2: <ul>,<ol> List Item Styles 2
   /*5. TS2_FEATURED1*/
   .TS2_featured1_items-wrapper{
     width:95%;
+  }
+  .TS2_featured1_item-description {
+    padding: 1.25rem;
   }
   /*5. TS2_FEATURED1*/
 }
@@ -930,6 +952,10 @@ TS2_pro-det1_lis2: <ul>,<ol> List Item Styles 2
     max-width: 90%;
     padding: 1rem;
   }
+
+  .popup1_i1{ 
+    margin:1rem auto 0.5rem auto;
+  }
   /*0. POPUP1*/
 
   /*1. TS2_HEADER2*/
@@ -1001,7 +1027,7 @@ TS2_pro-det1_lis2: <ul>,<ol> List Item Styles 2
     width:100%
   }
   .TS2_featured1_items{
-    max-width:100%;
+    width:100%;
     justify-content: center;
   }
 
@@ -1020,6 +1046,9 @@ TS2_pro-det1_lis2: <ul>,<ol> List Item Styles 2
     .popup1_content{
       max-width: 100%;
       padding: 0.5rem;
+    }
+    .popup1_i1{ 
+      display: none;
     }
     /*0. POPUP1*/
   /*1. TS2_HEADER2*/
