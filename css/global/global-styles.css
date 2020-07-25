@@ -1,7 +1,7 @@
-/*!LAST UPDATED: May 17, 2020*/
+/*!LAST UPDATED: July 24, 2020*/
 /*!==== INDEX ====
     GENERAL PROPERTIES (Updated: april 20, 2020)
-    1. TEXT STYLES (Updated: May 10, 2020)
+    1. TEXT STYLES (Updated: July 24, 2020)
     2. COLORS (Updated: May 4, 2020)
     3. BUTTONS (Updated: May 8, 2020)
     4. ANIMATIONS (Updated: april 29, 2020)
@@ -138,9 +138,26 @@ html {
   letter-spacing: 0.15rem;
   color: var(--black-normal);
   margin: var(--tmp1);
-  user-select: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
 }
-
+.note2{
+  font-family: "Open Sans", arial, sans-serif;
+  font-size: 0.8rem;
+  line-height: var(--lhp1);
+  font-weight: bold;
+  text-align: center;
+  letter-spacing: -0.01em; 
+  color: var(--black-normal);
+  margin: var(--tmp1);
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+/*
 .note-lt{
   font-family: "Open Sans", arial, sans-serif;
   font-size: 0.65rem;
@@ -155,7 +172,7 @@ html {
   opacity:0.6;
   user-select: none;
 }
-
+*/
 .note-container{
   width: 80%;
   display: flex;
@@ -304,7 +321,10 @@ a .RB1{
   background-color: var(--color2-normal);
   box-shadow: 0px 4px 8px hsla(var(--black), 0%, 0%, 0.3);
   transition: var(--a250ms);
-  user-select: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
   cursor: pointer;  
 }/*Base*/
 
@@ -358,7 +378,6 @@ button:focus{
   width: 80%;
   height: auto;
   margin: 0.5rem auto 0 auto;
-  display: -webkit-box;
   display: flex;
   flex-flow: row wrap;
   align-items: center;
@@ -397,7 +416,6 @@ a .margin-R0{
   width: 80%;
   height: auto;
   margin: 0.5rem auto 0 auto;
-  display: -webkit-box;
   display: flex;
   flex-flow: row wrap;
   align-items: center;
@@ -424,7 +442,8 @@ a .margin-R0{
   border-left: 2px solid black;
   border-bottom: 2px solid black;
   transform: rotate(-45deg);
-  animation: sdb2 2s infinite;
+  -webkit-animation: sdb2 2s infinite;
+          animation: sdb2 2s infinite;
   box-sizing: border-box;
 }
 @-webkit-keyframes sdb2 {
@@ -442,16 +461,14 @@ a .margin-R0{
 }
 @keyframes sdb2 {
   0% {
-    -webkit-transform: rotate(-45deg) translate(0, 0);
-            transform: rotate(-45deg) translate(0, 0);
+    transform: rotate(-45deg) translate(0, 0);
     opacity: 0;
   }
   50% {
     opacity: 1;
   }
   100% {
-    -webkit-transform: rotate(-45deg) translate(-20px, 20px);
-            transform: rotate(-45deg) translate(-20px, 20px);
+    transform: rotate(-45deg) translate(-20px, 20px);
     opacity: 0;
   }
 }
