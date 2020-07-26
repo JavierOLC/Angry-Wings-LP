@@ -1,12 +1,12 @@
-/*!LAST UPDATED: July 25, 2020*/
+/*!LAST UPDATED: July 26, 2020*/
 /*!==== INDEX ====
     0. LIGHTBOX1 (Updated: July 25, 2020)
     1. TS2_HEADER2 (Updated: June 5, 2020) [based on TS2_HEADER1]
-    2. TS2_FEATURED2 (Updated: June 18, 2020) [Based on TS2_FEATURED1]
+    2. TS2_FEATURED2 (Updated: July 2, 2020) [Based on TS2_FEATURED1]
     4. TS2_PRO-DET1 (Updated: July 24, 2020)
     5. TS2_FEATURED1 (Updated: July 24, 2020)
-    7. TS2_QUOTE1 (Updated: May 21, 2020)
-    MEDIA QUERIES (Updated: July 24, 2020)
+    7. TS2_QUOTE2 (Updated: July 26, 2020)
+    MEDIA QUERIES (Updated: July 26, 2020)
 
 ==== INDEX ====*/
 
@@ -175,7 +175,7 @@
   margin-bottom: 0 !important; 
 }
 .TS2_featured2_items-wrapper{
-  width:70%;
+  width:75%;
   margin: 4rem 0 0 0;
   display: grid;
   grid-template-columns: repeat(3,1fr);
@@ -184,12 +184,13 @@
 /*EMBEDDED FROM PRINCING 1 (TS1) - modded!*/
 .TS2_featured2_items {
   max-width: 400px;
+  margin: 0 auto 0 auto ;
   display: flex;
+  flex: 0 0 auto;
   flex-flow: column nowrap;
   align-items: center;
   justify-content: flex-start;
   transition: var(--a250ms);
-  flex: 0 0 auto;
 }
 
 .TS2_featured2_item-description{
@@ -229,6 +230,7 @@
   left: 50%;
   transform: translate(-50%, -50%);
 }
+/*EMBEDDED FROM SQUARE-ITEMS 1*/
 /*EMBEDDED FROM PRINCING 1 (TS1)*/
 
 /*!==== 2. TS2_FEATURED2 ====*/
@@ -621,6 +623,7 @@ TS2_pro-det1_lis2: <ul>,<ol> List Item Styles 2
   left: 50%;
   transform: translate(-50%, -50%);
 }
+/*EMBEDDED FROM SQUARE-ITEMS 1*/
 /*EMBEDDED FROM PRINCING 1 (TS1)*/
 
 /*DETAILS*/
@@ -628,42 +631,86 @@ TS2_pro-det1_lis2: <ul>,<ol> List Item Styles 2
 /*DETAILS*/
 /*!==== 5. TS2_FEATURED1 ====*/
 
-/*!==== 7. TS2_QUOTE1 ====*/
+/*!==== 7. TS2_quote2 ====*/
 
 /*TEXT STYLES*/
-.TS2_quote1_h2s{
+.TS2_quote2_h2s{
   color: var(--color3-normal);
-  width: 80%
+  width: 100%;
+  text-align: left;
 }
 
-.TS2_quote1_p1s{
+.TS2_quote2_p1s{
   color: var(--white-normal);
-  width: 80%
+  width: 100%;
+  text-align: left;
 }
-.TS2_quote1 > .note-container > p{
-  margin:auto; 
+.TS2_quote2 > .note-container > p{
   color:var(--white-normal);
 }
 /*TEXT STYLES*/
 
-.TS2_quote1{
+.TS2_quote2{
   min-height:50vh;
   width: 100%;
-  
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: center;
+}
+.TS2_quote2_container{
+  width:75%;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: space-between;
+}
+/*Left container*/
+.TS2_quote2_L{
+  width:55%;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.TS2_quote2_L .buttons-container{
+  margin: 0.5rem 0 0 0;
+  justify-content: flex-start;
+}
+.TS2_quote2 > .note-container{
+  margin-top: 3rem;
+}
+/*Left container*/
+
+/*Right container*/
+.TS2_quote2_R{
+  width:25%;
   display: flex;
   flex-flow: column nowrap;
   align-items: center;
   justify-content: center;
 }
-
-.TS2_quote1 > .note-container{
-  margin-top: 3rem;
+.TS2_quote2_R > .square-items1 {
+  width: 100%;
+  margin: auto auto 2rem auto;
 }
-/*DETAILS*/
+
+.TS2_quote2_R > .square-items1:after {
+  padding-top: 100%;
+}
+
+.TS2_quote2_R > .square-items1 > .square-items1_content {
+  position: absolute;
+  width: 100%; 
+  color: #fff;
+}
+/*Right container*/
 
 /*DETAILS*/
 
-/*!==== 7. TS2_QUOTE1 ====*/
+/*DETAILS*/
+
+/*!==== 7. TS2_quote2 ====*/
 
 /*!==== MEDIA QUERIES====*/
 @media screen and (min-width:2000px){
@@ -688,6 +735,11 @@ TS2_pro-det1_lis2: <ul>,<ol> List Item Styles 2
     width: 60%;
   }
   /*5. TS2_FEATURED1*/
+  /*7. TS2_QUOTE2*/
+  .TS2_quote2_container{
+    width:50%;
+  }
+  /*7. TS2_QUOTE2*/
 }
 
 @media screen and (max-width:1440px){
@@ -721,9 +773,17 @@ TS2_pro-det1_lis2: <ul>,<ol> List Item Styles 2
   }
   /*5. TS2_FEATURED1*/
 
-  /*7. TS2_QUOTE1*/
-  
-  /*7. TS2_QUOTE1*/
+  /*7. TS2_quote2*/
+  .TS2_quote2_container{
+    width:85%;
+  }
+  .TS2_quote2_L{
+    width:60%;
+  }
+  .TS2_quote2_R{
+    width:30%;
+  }
+  /*7. TS2_quote2*/
 }
 
 @media screen and (max-width:1280px){
@@ -739,9 +799,9 @@ TS2_pro-det1_lis2: <ul>,<ol> List Item Styles 2
   }
   /*5. TS2_FEATURED1*/
 
-  /*7. TS2_QUOTE1*/
+  /*7. TS2_quote2*/
   
-  /*7. TS2_QUOTE1*/
+  /*7. TS2_quote2*/
   
 }/*Small Laptops*/
 
@@ -941,9 +1001,40 @@ TS2_pro-det1_lis2: <ul>,<ol> List Item Styles 2
   }/*tip on mobile*/
   /*5. TS2_FEATURED1*/
 
-  /*7. TS2_QUOTE1*/
-  
-  /*7. TS2_QUOTE1*/
+  /*7. TS2_quote2*/
+  .TS2_quote2_container{
+    width: 90%;
+    flex-flow: column nowrap;
+  }
+
+  .TS2_quote2_L{
+    order:2;
+    width: 90%;
+  }
+  .TS2_quote2_h2s,.TS2_quote2_p1s{
+    text-align: center;
+  }
+  .TS2_quote2_L .buttons-container {
+    justify-content: center;
+    margin: auto;
+  }
+  .TS2_quote2_L > .note-container{
+    width:100%;
+    margin: 2rem auto;
+    justify-content: center;
+  }
+  .TS2_quote2_L .buttons-container > .margin-L0 {
+    margin: 1em;
+  }
+  .TS2_quote2_R{
+    order: 1;
+    width: 50%;
+    margin: 0 auto 4rem auto;
+  }
+  .TS2_quote2_R > .square-items1{
+    margin: 0;
+  }
+  /*7. TS2_quote2*/
 }/*Tablets*/
 
 @media screen and (max-width:600px){
@@ -1033,12 +1124,19 @@ TS2_pro-det1_lis2: <ul>,<ol> List Item Styles 2
 
   /*5. TS2_FEATURED1*/
 
-  /*7. TS2_QUOTE1*/
-  .TS2_quote1_h2s,
-  .TS2_quote1_p1s{
-    width: 100%
+  /*7. TS2_quote2*/
+  .TS2_quote2_L{
+    width:100%;
   }
-  /*7. TS2_QUOTE1*/
+
+  .TS2_quote2_R{
+    width: 75%;
+    margin:0 auto 4rem auto;
+  }
+  .TS2_quote2_R > .square-items1{
+    margin: 0;
+  }
+  /*7. TS2_quote2*/
 }/*Smartphones*/
 
 @media screen and (max-width:900px) and (orientation:landscape){
@@ -1065,8 +1163,8 @@ TS2_pro-det1_lis2: <ul>,<ol> List Item Styles 2
  .TS2_featured2_items-wrapper{
   grid-template-columns:repeat(2, 1fr);
   gap: 2rem;
-  width:100%;
-  margin: 2rem auto 1rem auto;
+  width:90%;
+  margin: 3rem auto 1rem auto;
 }
 .square-items2{
   width:50%;
@@ -1107,9 +1205,19 @@ TS2_pro-det1_lis2: <ul>,<ol> List Item Styles 2
   }
   /*5. TS2_FEATURED1*/
 
-  /*7. TS2_QUOTE1*/
-  
-  /*7. TS2_QUOTE1*/
+  /*7. TS2_quote2*/
+  .TS2_quote2_L{
+    width:100%;
+  }
+
+  .TS2_quote2_R{
+    width: 30%;
+    margin:0 auto 2rem auto;
+  }
+  .TS2_quote2_R > .square-items1{
+    margin: 0;
+  }
+  /*7. TS2_quote2*/
 }/*Smartphones on landscape*/
 
 /*!==== MEDIA QUERIES====*/
