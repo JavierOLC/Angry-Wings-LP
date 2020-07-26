@@ -1,0 +1,169 @@
+    {
+        "@context": "http://schema.org",
+        "@type": "Restaurant",
+        "url": "http://www.tastyangrywings.com/",
+        "logo": "http://www.tastyangrywings.com/assets/global/aw-1.svg",
+        "name": "Angry Wings",
+        "description": "Restaurante 100% hondureño. Enfocado en satisfacer a sus comensales con su distintivo sabor en cada platillo de alitas de pollo y demás productos.",
+        "telephone": "+50489302485",
+        "email": "mailto:tastyangrywings@gmail.com",
+        "servesCuisine": "Restaurante hondureño",
+        "priceRange": "$$",
+        "openingHoursSpecification": [
+            {
+                "@type": "OpeningHoursSpecification",
+                "dayOfWeek": [
+                    "Monday"
+                ],
+                "opens": "00:00",
+                "closes": "00:00"
+            },
+            {
+                "@type": "OpeningHoursSpecification",
+                "dayOfWeek": [
+                    "Tuesday",
+                    "Wednesday",
+                    "Thursday"
+                ],
+                "opens": "11:00",
+                "closes": "19:00"
+            },
+            {
+                "@type": "OpeningHoursSpecification",
+                "dayOfWeek": [
+                    "Friday",
+                    "Saturday",
+                    "Sunday"
+                ],
+                "opens": "11:00",
+                "closes": "20:00"
+            }
+        ],
+        "image": [
+            "http://www.tastyangrywings.com/assets/product/alitas/alitas3.jpg"
+        ],
+        "hasMenu": {
+            "@type": "Menu",
+            "hasMenuSection": [
+                {
+                    "@type": "MenuSection",
+                    "name": "Alitas de Pollo",
+                    "description": "Disfruta de cinco especialidades de alitas hechas para ti, todas frescas y de tamaño jumbo.",
+                    "image": [
+                        "http://www.tastyangrywings.com/assets/page/index/header-alitas2.jpg"
+                    ],
+                    "hasMenuItem": [
+                        {
+                            "@type": "MenuItem",
+                            "name": "Superbly Crispy",
+                            "description": "Crocantes alitas empanizadas en nuestra receta secreta de especias y finas hierbas.",
+                            "offers": {
+                                "@type": "Offer",
+                                "price": "159.95",
+                                "priceCurrency": "HNL"
+                            }
+                        },
+                        {
+                            "@type": "MenuItem",
+                            "name": "Wine BBQ",
+                            "description": "Cremosas alitas en salsa barbacoa preparada con un toque francés.",
+                            "offers": {
+                                "@type": "Offer",
+                                "price": "149.95",
+                                "priceCurrency": "HNL"
+                            }
+                        },
+                        {
+                            "@type": "MenuItem",
+                            "name": "Burning Spicy",
+                            "description": "Explosión de alitas picantes que no resistirás probar. Chile 100% orgánico, no de envases con preservantes.",
+                            "offers": {
+                                "@type": "Offer",
+                                "price": "139.95",
+                                "priceCurrency": "HNL"
+                            }
+                        },
+                        {
+                            "@type": "MenuItem",
+                            "name": "Tropical Hot",
+                            "description": "Alitas con destellos de rico picantito mezclado con un sabor tropical.",
+                            "offers": {
+                                "@type": "Offer",
+                                "price": "149.95",
+                                "priceCurrency": "HNL"
+                            }
+                        },
+                        {
+                            "@type": "MenuItem",
+                            "name": "Sweet & Sour Sensation",
+                            "description": "Tonos dulces y agrios degustarán tu paladar haciéndote sentir una sensación agridulce diferente.",
+                            "offers": {
+                                "@type": "Offer",
+                                "price": "159.95",
+                                "priceCurrency": "HNL"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "@type": "MenuSection",
+                    "name": "Complementos",
+                    "description": "Elige el complemento que mas te guste para acompañar tus deliciosas alitas.",
+                    "hasMenuItem": [
+                        {
+                            "@type": "MenuItem",
+                            "name": "Papas Fritas",
+                            "description": "Crujientes y deliciosas papas fritas naturales.",
+                            "image": [
+                                "http://www.tastyangrywings.com/assets/product/extras/papitas1.jpg"
+                            ],
+                            "offers": {
+                                "@type": "Offer",
+                                "price": "39.95",
+                                "priceCurrency": "HNL"
+                            }
+                        },
+                        {
+                            "@type": "MenuItem",
+                            "name": "Papas Deluxe",
+                            "description": "Sabrosas papas sazonadas con nuestra selección de hierbas y especias.",
+                            "image": [
+                                "http://www.tastyangrywings.com/assets/product/extras/papas-wedge1.jpg"
+                            ],
+                            "offers": {
+                                "@type": "Offer",
+                                "price": "49.95",
+                                "priceCurrency": "HNL"
+                            }
+                        },
+                        {
+                            "@type": "MenuItem",
+                            "name": "Aros de Cebolla",
+                            "description": "Deliciosos y crocantes aros de cebolla blanca.",
+                            "image": [
+                                "http://www.tastyangrywings.com/assets/product/extras/o-rings1.jpg"
+                            ],
+                            "offers": {
+                                "@type": "Offer",
+                                "price": "34.95",
+                                "priceCurrency": "HNL"
+                            }
+                        },
+                        {
+                            "@type": "MenuItem",
+                            "name": "Veggie Sticks",
+                            "description": "Frescos bastones de apio y zanahoria.",
+                            "image": [
+                                "http://www.tastyangrywings.com/assets/product/extras/veggie-sticks1.jpg"
+                            ],
+                            "offers": {
+                                "@type": "Offer",
+                                "price": "19.95",
+                                "priceCurrency": "HNL"
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    }
