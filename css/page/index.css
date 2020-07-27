@@ -1023,8 +1023,8 @@ TS2_pro-det1_lis2: <ul>,<ol> List Item Styles 2
     margin: 2rem auto;
     justify-content: center;
   }
-  .TS2_quote2_L .buttons-container > .margin-L0 {
-    margin: 1em;
+  .TS2_quote2_L > .buttons-container > a > .margin-L0 {
+    margin: 1rem;
   }
   .TS2_quote2_R{
     order: 1;
