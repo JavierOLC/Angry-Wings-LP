@@ -3,6 +3,9 @@
         "@type": "Restaurant",
         "url": "http://www.tastyangrywings.com/",
         "logo": "http://www.tastyangrywings.com/assets/global/aw-1.svg",
+        "image": [
+            "http://www.tastyangrywings.com/assets/product/alitas/alitas3.jpg"
+        ],
         "name": "Angry Wings",
         "description": "Restaurante 100% hondureño. Enfocado en satisfacer a sus comensales con su distintivo sabor en cada platillo de alitas de pollo y demás productos.",
         "telephone": "+50489302485",
@@ -38,9 +41,6 @@
                 "opens": "11:00",
                 "closes": "20:00"
             }
-        ],
-        "image": [
-            "http://www.tastyangrywings.com/assets/product/alitas/alitas3.jpg"
         ],
         "hasMenu": {
             "@type": "Menu",

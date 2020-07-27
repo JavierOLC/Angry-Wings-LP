@@ -1,12 +1,12 @@
-/*!LAST UPDATED: July 26, 2020*/
+/*!LAST UPDATED: July 27, 2020*/
 /*!==== INDEX ====
     0. LIGHTBOX1 (Updated: July 25, 2020)
     1. TS2_HEADER2 (Updated: June 5, 2020) [based on TS2_HEADER1]
     2. TS2_FEATURED2 (Updated: July 2, 2020) [Based on TS2_FEATURED1]
     4. TS2_PRO-DET1 (Updated: July 24, 2020)
     5. TS2_FEATURED1 (Updated: July 24, 2020)
-    7. TS2_QUOTE2 (Updated: July 26, 2020)
-    MEDIA QUERIES (Updated: July 26, 2020)
+    7. TS2_QUOTE2 (Updated: July 27, 2020)
+    MEDIA QUERIES (Updated: July 27, 2020)
 
 ==== INDEX ====*/
 
@@ -684,7 +684,7 @@ TS2_pro-det1_lis2: <ul>,<ol> List Item Styles 2
 
 /*Right container*/
 .TS2_quote2_R{
-  width:25%;
+  width:30%;
   display: flex;
   flex-flow: column nowrap;
   align-items: center;
@@ -692,7 +692,7 @@ TS2_pro-det1_lis2: <ul>,<ol> List Item Styles 2
 }
 .TS2_quote2_R > .square-items1 {
   width: 100%;
-  margin: auto auto 2rem auto;
+  margin: auto auto 3rem auto;
 }
 
 .TS2_quote2_R > .square-items1:after {
@@ -781,7 +781,7 @@ TS2_pro-det1_lis2: <ul>,<ol> List Item Styles 2
     width:60%;
   }
   .TS2_quote2_R{
-    width:30%;
+    width:35%;
   }
   /*7. TS2_quote2*/
 }
@@ -1028,8 +1028,8 @@ TS2_pro-det1_lis2: <ul>,<ol> List Item Styles 2
   }
   .TS2_quote2_R{
     order: 1;
-    width: 50%;
-    margin: 0 auto 4rem auto;
+    width: 55%;
+    margin: 0 auto 2rem auto;
   }
   .TS2_quote2_R > .square-items1{
     margin: 0;
@@ -1130,8 +1130,8 @@ TS2_pro-det1_lis2: <ul>,<ol> List Item Styles 2
   }
 
   .TS2_quote2_R{
-    width: 75%;
-    margin:0 auto 4rem auto;
+    width: 80%;
+    margin:0 auto 2rem auto;
   }
   .TS2_quote2_R > .square-items1{
     margin: 0;
@@ -1211,7 +1211,7 @@ TS2_pro-det1_lis2: <ul>,<ol> List Item Styles 2
   }
 
   .TS2_quote2_R{
-    width: 30%;
+    width: 40%;
     margin:0 auto 2rem auto;
   }
   .TS2_quote2_R > .square-items1{
