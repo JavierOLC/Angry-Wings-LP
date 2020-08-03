@@ -1,7 +1,7 @@
-    /*!LAST UPDATED: July 24, 2020*/
+    /*!LAST UPDATED: August 3, 2020*/
   /*!==== INDEX ====
   
-      1. MENU 2 (Updated: June 7, 2020)
+      1. MENU 2 (Updated: August 3, 2020)
       2. FOOTER 2 (Updated: July 24, 2020)
       MEDIA QUERIES (Updated: July 24 2020)
   
@@ -54,10 +54,6 @@ PLACE THIS IN YOUR SCRIPTS SO IT AUTO HIDES WHEN SCROLLING DOWN*/
     transform: scale(0.9);
     color: var(--color2-normal);
   }
-  .menu2-mobile_footer > .social-links1 a {
-    background-color: var(--color1-normal);
-    color: var(--white-normal);
-  }/*changes social media buttons color scheme*/
 
   .menu2-items .p1s{
     color: var(--white-normal);
@@ -363,6 +359,11 @@ PLACE THIS IN YOUR SCRIPTS SO IT AUTO HIDES WHEN SCROLLING DOWN*/
       display: none;
     }
     /*1.1 DESKTOP MENU 2*/
+    /*2. FOOTER 2*/
+    .dev-link1 {
+      width: 80%;
+    };
+    /*2. FOOTER 2*/
 }/*Hides desktop Menu*/
 
 @media screen and (min-width: 901px) {
@@ -482,12 +483,12 @@ PLACE THIS IN YOUR SCRIPTS SO IT AUTO HIDES WHEN SCROLLING DOWN*/
       margin:0;
     }/* makes buttons bigger*/
 
-    .menu2-mobile_footer> .social-links1 > a{
+    .social-links1_mobile a{
       background-color: var(--black-normal);
-      color: var(--color3-normal);
+      color: var(--white-normal);
     }/*changes social media buttons on mobile menu*/
-    .menu2-mobile_footer> .social-links1 > a:hover,
-    .menu2-mobile_footer> .social-links1 > a:focus{
+    .social-links1_mobile a:hover,
+    .social-links1_mobile a:focus{
       color: var(--white-normal);
     }
     /* DETAILS*/
