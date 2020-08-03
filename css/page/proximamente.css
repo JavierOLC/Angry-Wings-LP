@@ -1,0 +1,134 @@
+/*!LAST UPDATED: August 3, 2020*/
+/*!==== INDEX ====
+    1. TS2_S1 (Updated: August 3, 2020)
+    MEDIA QUERIES (Updated: August 3, 2020)
+s
+==== INDEX ====*/
+
+  /*!==== 1. TS2_S1 ====*/
+  
+  /*TEXT STYLES*/
+  .TS2_S1-cont h1{
+    width:60%;
+    margin: 1rem auto;
+    color: var(--color3-normal);
+  }
+  
+  .TS2_S1-cont .p1s{
+    width:60%;
+    color: var(--white-normal);
+  }
+  /*TEXT STYLES*/
+
+  .TS2_S1{
+  background-size: cover;
+  background-position: center;
+  }
+
+  .TS2_S1-cont{
+    width: 100%;
+    min-height: 100vh;
+    display:flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items:center;
+    background: hsla(var(--black), 0%, 0%, 0.8);
+  }
+  .TS2_S1-clock{
+    width: 70%;
+    margin: 3rem auto;
+    background: var(--color1-normal);
+    border-radius: 4rem;
+    box-shadow: var(--shadow1);
+  }
+  
+  /*DETAILS*/
+  .TS2_S1-cont .social-links1{
+    margin-top:2rem;
+  }
+  
+  .TS2_S1-cont .social-links1 a {
+    color: var(--black-normal);
+    background:var(--white-normal);
+  }/*changes color scheme of social media buttons*/
+  .TS2_S1-cont .social-links1 a:hover{
+    color: var(--white-normal);
+  }
+  footer .dev-link1{
+    position: relative;
+  }
+  /*DETAILS*/
+  
+  /*!==== 1. TS2_S1 ====*/
+  
+  /*!==== MEDIA QUERIES====*/
+  @media screen and (min-width:2000px){
+    /*1. TS2_S1*/
+    .TS2_S1-cont h1,
+    .TS2_S1-cont .p1s{
+      width:50%
+    }
+    .TS2_S1-clock{
+      width: 55%;
+    }
+    /*1. TS2_S1*/
+  }
+  
+  @media screen and (max-width:1440px){
+    /*1. TS2_S1*/
+    .TS2_S1-cont h1,
+    .TS2_S1-cont .p1s{
+      width:80%
+    }
+    .TS2_S1-clock{
+      width: 60%;
+    }
+    /*1. TS2_S1*/
+  }
+  
+  @media screen and (max-width: 1024px) {
+    /*1. TS2_S1*/
+    .TS2_S1-clock{
+      width: 70%;
+      border-radius: 2rem;
+    }
+    /*1. TS2_S1*/
+  }
+  
+  @media screen and (max-width:900px){
+    /*1. TS2_S1*/
+    .TS2_S1-clock{
+      width: 80%;
+    }
+    /*1. TS2_S1*/
+  }/*Tablets*/
+  
+  @media screen and (max-width:600px){ 
+    /*1. TS2_S1*/
+    .TS2_S1-cont h1,
+    .TS2_S1-cont .p1s{
+      width:90%
+    }
+  
+    .TS2_S1-clock{
+      width: 100%;
+      border-radius: 1rem;
+    }
+    /*1. TS2_S1*/
+  }/*Smartphones*/
+  
+  @media screen and (max-width:900px) and (orientation:landscape){
+    /*1. TS2_S1*/
+    .TS2_S1-cont h1,
+    .TS2_S1-cont .p1s{
+      width:90%
+    }
+    .TS2_S1-clock{
+      width: 100%;
+      border-radius: 1rem;
+    }
+    /*1. TS2_S1*/
+  }/*Smartphones on landscape*/
+  
+  /*!==== MEDIA QUERIES====*/
+  
