@@ -141,7 +141,7 @@ s
 
     .TS2_S1-cont h1{
       width:100%;
-      font-size: 2.5rem;
+      font-size: 2.5rem !important;
     }
 
     .TS2_S1-cont .p1s{
@@ -161,6 +161,11 @@ s
   
   @media screen and (max-width:900px) and (orientation:landscape){
     /*1. TS2_S1*/
+    .TS2_S1-cont h1{
+      width:100%;
+      font-size: 2.5rem !important;
+    }
+    
     .TS2_S1-cont h1,
     .TS2_S1-cont .p1s{
       width:90%
