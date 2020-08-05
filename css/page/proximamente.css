@@ -138,8 +138,10 @@ s
     .t2{
       display:block;
     }
+
     .TS2_S1-cont h1{
       width:100%;
+      font-size: 2.5rem;
     }
 
     .TS2_S1-cont .p1s{
