@@ -1,7 +1,7 @@
-/*!LAST UPDATED: August 3, 2020*/
+/*!LAST UPDATED: August 4, 2020*/
 /*!==== INDEX ====
-    1. TS2_S1 (Updated: August 3, 2020)
-    MEDIA QUERIES (Updated: August 3, 2020)
+    1. TS2_S1 (Updated: August 4, 2020)
+    MEDIA QUERIES (Updated: August 4, 2020)
 s
 ==== INDEX ====*/
 
@@ -43,6 +43,13 @@ s
   }
   
   /*DETAILS*/
+  .t1{
+    display:block;
+  }
+  .t2{
+    display:none;
+  }
+
   .TS2_S1-i1{
     width: 100%;
     display: flex;
@@ -124,7 +131,17 @@ s
   
   @media screen and (max-width:600px){ 
     /*1. TS2_S1*/
-    .TS2_S1-cont h1,
+    .t1{
+      display:none;
+    }
+
+    .t2{
+      display:block;
+    }
+    .TS2_S1-cont h1{
+      width:100%;
+    }
+
     .TS2_S1-cont .p1s{
       width:90%
     }
