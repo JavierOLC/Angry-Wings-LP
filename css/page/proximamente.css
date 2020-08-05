@@ -43,17 +43,33 @@ s
   }
   
   /*DETAILS*/
-  .TS2_S1-cont .social-links1{
-    margin-top:2rem;
+  .TS2_S1-i1{
+    width: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: center;
+    margin: 2.5rem auto 1rem auto;
   }
-  
+
+  .TS2_S1-i1 i {
+    margin: 0 .5rem;
+    font-size: 2.5rem;
+    color: var(--color3-normal);
+}  
+
+  .TS2_S1-cont .social-links1{
+    margin:0.5rem auto;
+}
   .TS2_S1-cont .social-links1 a {
     color: var(--black-normal);
     background:var(--white-normal);
   }/*changes color scheme of social media buttons*/
+  
   .TS2_S1-cont .social-links1 a:hover{
     color: var(--white-normal);
   }
+
   footer .dev-link1{
     position: relative;
   }
@@ -100,6 +116,9 @@ s
     .TS2_S1-clock{
       width: 80%;
     }
+    .TS2_S1-i1{
+      margin:0 auto 1rem auto;
+    }
     /*1. TS2_S1*/
   }/*Tablets*/
   
@@ -115,6 +134,9 @@ s
       border-radius: 1rem;
       box-shadow: 10px 10px 25px hsla(var(--color1), 76%, 37%, 0.5);
     }
+    .TS2_S1-i1{
+      margin: 0 auto 1rem auto;
+    }
     /*1. TS2_S1*/
   }/*Smartphones*/
   
@@ -127,6 +149,9 @@ s
     .TS2_S1-clock{
       width: 100%;
       border-radius: 1rem;
+    }
+    .TS2_S1-i1{
+      margin: 0 auto 1rem auto;
     }
     /*1. TS2_S1*/
   }/*Smartphones on landscape*/
