@@ -1,7 +1,7 @@
-/*!LAST UPDATED: August 4, 2020*/
+/*!LAST UPDATED: August 5, 2020*/
 /*!==== INDEX ====
-    1. TS2_S1 (Updated: August 4, 2020)
-    MEDIA QUERIES (Updated: August 4, 2020)
+    1. TS2_S1 (Updated: August 5, 2020)
+    MEDIA QUERIES (Updated: August 5, 2020)
 s
 ==== INDEX ====*/
 
@@ -36,7 +36,7 @@ s
   }
   .TS2_S1-clock{
     width: 70%;
-    margin: 3rem auto;
+    margin: 2rem auto;
     background: var(--color1-normal);
     border-radius: 4rem;
     box-shadow: 15px 15px 50px hsla(var(--color1), 76%, 37%, 0.5);
@@ -56,15 +56,19 @@ s
     flex-flow: row nowrap;
     align-items: center;
     justify-content: center;
-    margin: 2.5rem auto 1rem auto;
+    margin: 1rem auto;
   }
 
   .TS2_S1-i1 i {
-    margin: 0 .5rem;
+    margin: 0.5rem;
     font-size: 2.5rem;
     color: var(--color3-normal);
-}  
-
+  }  
+  .TS2_S1-cont .note2{
+    width: 80%;
+    margin-top: 1.5rem; 
+    color:var(--white-normal); 
+  }
   .TS2_S1-cont .social-links1{
     margin:0.5rem auto;
 }
@@ -155,6 +159,10 @@ s
     }
     .TS2_S1-i1{
       margin: 0 auto 1rem auto;
+    }
+    .TS2_S1-cont .note2{
+      width: 100%;
+      margin-top: 1.5rem; 
     }
     /*1. TS2_S1*/
   }/*Smartphones*/
